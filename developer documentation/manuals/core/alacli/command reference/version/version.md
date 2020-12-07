@@ -10,7 +10,7 @@ Retrieve version information
 
 * 📄 [client] - Retrieve version information of the client
 
-
+<br>
 
     alacli version client
 

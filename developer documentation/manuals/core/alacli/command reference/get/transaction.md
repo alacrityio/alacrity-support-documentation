@@ -77,4 +77,4 @@ Retrieves a transaction from the blockchain
 }
 ```
 
-> Important Note   The above transaction id will not exist on your blockchain
+> Important Note <br> <br> The above transaction id will not exist on your blockchain
