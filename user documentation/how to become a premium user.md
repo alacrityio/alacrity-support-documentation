@@ -7,7 +7,7 @@ Click on the "CreateID" button on the Alacrity homepage, which will open the acc
 2. Enter the Email you wish to use as an ID
 3. Enter a Password and Confirm Password
 4. Once successfully processed, a Twelve Word Secret Recovery Key will be issued. **VERY IMPORTANT!** It is imperative to keep this mnemonic Recovery Key securely copied and stored, as it is needed for logging in. This Secret Recovery Key will be sent to the email provided earlier.
-5. After accepting the License Agreement and Privacy Policy, the payment portal will be the next stop. You will be redirected there, to make payment as prerequisite prior to completing registration. <br> ![premium account](../resources/premium_user.png) <br> If not, once signed in, this is located at **Menu>Profile>Premium Account**. Payment of $25 to secure your Premium Alacrity Account can be made using Credit or Debit Card.
+5. After accepting the License Agreement and Privacy Policy, the payment portal will be the next stop. You will be redirected there, to make payment as prerequisite prior to completing registration.  ![premium account](../resources/premium_user.png)  If not, once signed in, this is located at **Menu>Profile>Premium Account**. Payment of $25 to secure your Premium Alacrity Account can be made using Credit or Debit Card.
 6. Sign up process is Complete! You will be redirected to the DAPP Store.
 
 A Magic Recovery Code is available on the **Setting>Backup & Restore** page.

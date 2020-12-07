@@ -12,4 +12,4 @@
 
 When a wallet is unlocked with the corresponding password, `alacli` can request `kalad` to sign a transaction with the appropriate private keys. Also, `kalad` provides support for hardware-based wallets such as Secure Encalve and YubiHSM.
 
-> Audience <br> <br> `kalad` is intended to be used by ALAIO developers only.
+> Audience   `kalad` is intended to be used by ALAIO developers only.

@@ -12,7 +12,7 @@ account_name | NamePrivileged (string) or NameBasic (string) or NameBid (string)
 
 ### **Responses**
 
-<br>
+
 
 ``` json
 {
@@ -113,7 +113,7 @@ Returns an object containing various details about a specific block on the block
 
 key | description
 --- | ---
-block_num_or_id | `string` <br> Provide a `block number` or a `block id`
+block_num_or_id | `string`  Provide a `block number` or a `block id`
 
 ### **Responses**
 
@@ -197,10 +197,10 @@ This method expects a transaction in JSON format and will attempt to apply it to
 
 key | description
 --- | ---
-signatures | `Array of strings (Signature)` <br> array of signatures required to authorize transaction
-compression | `boolean` <br> Compression used, usually false
-packed_context_free_data | `string` <br> json to hex
-packed_trx | `string` <br>  Transaction object json to hex
+signatures | `Array of strings (Signature)`  array of signatures required to authorize transaction
+compression | `boolean`  Compression used, usually false
+packed_context_free_data | `string`  json to hex
+packed_trx | `string`   Transaction object json to hex
 
 ### **Responses**
 
@@ -216,10 +216,10 @@ This method expects a transaction in JSON format and will attempt to apply it to
 
 key | description
 --- | ---
-signatures | `Array of strings (Signature)` <br> array of signatures required to authorize transaction
-compression | `boolean` <br> Compression used, usually false
-packed_context_free_data | `string` <br> json to hex
-packed_trx | `string` <br> Transaction object json to hex
+signatures | `Array of strings (Signature)`  array of signatures required to authorize transaction
+compression | `boolean`  Compression used, usually false
+packed_context_free_data | `string`  json to hex
+packed_trx | `string`  Transaction object json to hex
 
 ### **Responses**
 
@@ -235,11 +235,11 @@ This method expects a transaction in JSON format and will attempt to apply it to
 
 key | description
 --- | ---
-expiration | `string (DateTime) ` <br> Time that transaction must be confirmed by.
+expiration | `string (DateTime) `  Time that transaction must be confirmed by.
 ref_block_num | `integer`
-ref_block_prefix | `integer` <br> 32-bit portion of block ID
-max_net_usage_words | `string or integer (WholeNumber)` <br> A whole number
-max_cpu_usage_ms | `string or integer (WholeNumber)` <br> A whole number
+ref_block_prefix | `integer`  32-bit portion of block ID
+max_net_usage_words | `string or integer (WholeNumber)`  A whole number
+max_cpu_usage_ms | `string or integer (WholeNumber)`  A whole number
 delay_sec | `integer`
 context_free_actions | `Array of objects (Action)`
 actions | `Array of objects (Action)`
@@ -259,7 +259,7 @@ Retrieves the glock header state
 
 key | description
 --- | ---
-block_num_or_id | `string` <br> Provide a block_number or a block_id
+block_num_or_id | `string`  Provide a block_number or a block_id
 
 ### **Responses**
 
@@ -439,7 +439,7 @@ key | description
 --- | ---
 code | NamePrivileged (string) or NameBasic (string) or NameBid (string) or NameCatchAll (string) (Name) 
 account | NamePrivileged (string) or NameBasic (string) or NameBid (string) or NameCatchAll (string) (Name)
-symbol | `string (Symbol) ^([0-9]{1,32}.[0-9]{4} [A-Z]{1,7})$ ` <br> A string representation of an ALAIO symbol, composed of a float with a precision of 4, and a symbol composed of capital letters between 1-7 letters separated by a space, example `1.0000 ABC`.
+symbol | `string (Symbol) ^([0-9]{1,32}.[0-9]{4} [A-Z]{1,7})$ `  A string representation of an ALAIO symbol, composed of a float with a precision of 4, and a symbol composed of capital letters between 1-7 letters separated by a space, example `1.0000 ABC`.
 
 ### **Responses**
 
@@ -460,7 +460,7 @@ Retrieves currency stats
 key | description
 --- | ---
 code | NamePrivileged (string) or NameBasic (string) or NameBid (string) or NameCatchAll (string) (Name)
-symbol | `string (Symbol) ^([0-9]{1,32}.[0-9]{4} [A-Z]{1,7})$ ` <br> A string representation of an ALAIO symbol, composed of a float with a precision of 4, and a symbol composed of capital letters between 1-7 letters separated by a space, example `1.0000 ABC`.
+symbol | `string (Symbol) ^([0-9]{1,32}.[0-9]{4} [A-Z]{1,7})$ `  A string representation of an ALAIO symbol, composed of a float with a precision of 4, and a symbol composed of capital letters between 1-7 letters separated by a space, example `1.0000 ABC`.
 
 ### **Responses**
 
@@ -477,7 +477,7 @@ Returns the required keys needed to sign a transaction.
 key | description
 --- | ---
 transaction | object (Transaction) 
-available_keys | `array of strings (PublicKey)` <br> Provide the available keys
+available_keys | `array of strings (PublicKey)`  Provide the available keys
 
 ### **Responses**
 
@@ -493,9 +493,9 @@ Retrieves producers list
 
 key | description
 --- | ---
-limit | `string` <br> total number of producers to retrieve
-lower_bound | `string` <br> In conjunction with limit can be used to paginate through the results. For example, limit=10 and lower_bound=10 would be page 2
-json | `boolean` <br> return result in JSON format
+limit | `string`  total number of producers to retrieve
+lower_bound | `string`  In conjunction with limit can be used to paginate through the results. For example, limit=10 and lower_bound=10 would be page 2
+json | `boolean`  return result in JSON format
 
 ### **Responses**
 
@@ -569,9 +569,9 @@ Retrieves the scheduled transaction
 
 key | description
 --- | ---
-lower_bound | `string (DateTimeSeconds) ` <br> Date/time string in the format YYYY-MM-DDTHH:MM:SS.sss
-limit | `integer` <br> The maximum number of transactions to return
-json | `boolean` <br> true/false whether the packed transaction is converted to json
+lower_bound | `string (DateTimeSeconds) `  Date/time string in the format YYYY-MM-DDTHH:MM:SS.sss
+limit | `integer`  The maximum number of transactions to return
+json | `boolean`  true/false whether the packed transaction is converted to json
 
 ### **Responses**
 
@@ -633,12 +633,12 @@ Retrieves table scope
 
 key | description
 --- | ---
-code | `string` <br> `name` of the contract to return table data for
-table | `string` <br> Filter results by table
-lower_bound | `string` <br> Filters results to return the first element that is not less than provided value in set
-upper_bound | `string` <br> Filters results to return the first element that is greater than provided value in set
-limit | `integer <int32>` <br> Limit number of results returned.
-reverse | `boolean` <br> Reverse the order of returned results
+code | `string`  `name` of the contract to return table data for
+table | `string`  Filter results by table
+lower_bound | `string`  Filters results to return the first element that is not less than provided value in set
+upper_bound | `string`  Filters results to return the first element that is greater than provided value in set
+limit | `integer <int32>`  Limit number of results returned.
+reverse | `boolean`  Reverse the order of returned results
 
 ### **Responses**
 
@@ -667,11 +667,11 @@ Returns an object containing rows from the specified table.
 
 key | description
 --- | ---
-code | `string` <br> The name of the smart contract that controls the provided table
-table | `string` <br> The name of the table to query
-scope | `string` <br> The account to which this data belongs
-index_position | `string` <br> Position of the index used, accepted parameters `primary`, `secondary`, `tertiary`, `fourth`, `fifth`, `sixth`, `seventh`, `eighth`, `ninth` , `tenth`
-key_type | `string` <br> Type of key specified by index_position (for example - `uint64_t` or `name`)
+code | `string`  The name of the smart contract that controls the provided table
+table | `string`  The name of the table to query
+scope | `string`  The account to which this data belongs
+index_position | `string`  Position of the index used, accepted parameters `primary`, `secondary`, `tertiary`, `fourth`, `fifth`, `sixth`, `seventh`, `eighth`, `ninth` , `tenth`
+key_type | `string`  Type of key specified by index_position (for example - `uint64_t` or `name`)
 encode_type | `string`
 upper_bound | `string`
 lower_bound | `string`
@@ -735,7 +735,7 @@ Returns an object containing rows from the specified table.
 key | description
 --- | ---
 account_name | NamePrivileged (string) or NameBasic (string) or NameBid (string) or NameCatchAll (string) (Name)
-code_as_wasm | `integer` <br> default: 1 (true)
+code_as_wasm | `integer`  default: 1 (true)
 
 ### **Responses**
 
@@ -836,7 +836,7 @@ Retreives the activated protocol features for producer node
 
 key | description
 --- | ---
-params | `object` <br> Defines the filters to retreive the protocol features by
+params | `object`  Defines the filters to retreive the protocol features by
 
 ### **Responses**
 
@@ -859,8 +859,8 @@ Given a set of account names and public keys, find all account permission author
 
 key | description
 --- | ---
-accounts | `Authority (object)` <br> List of authorizing accounts and/or actor/permissions
-keys | `Array of strings (PublicKey) ` <br> List of authorizing keys
+accounts | `Authority (object)`  List of authorizing accounts and/or actor/permissions
+keys | `Array of strings (PublicKey) `  List of authorizing keys
 
 ### **Responses**
 
