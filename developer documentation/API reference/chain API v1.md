@@ -12,7 +12,7 @@ account_name | NamePrivileged (string) or NameBasic (string) or NameBid (string)
 
 ### **Responses**
 
-<br>
+
 
 ``` json
 {
