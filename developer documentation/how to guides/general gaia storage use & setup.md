@@ -21,7 +21,7 @@ Gaia stores data as a simple key-value store. When an identity is created, a cor
 
 A Gaia hub runs as a service which writes to data storage. The storage itself is a **simple key-value store**. The hub service writes to data storage by requiring a valid authentication token from a requestor. Typically, the hub service runs on a compute resource and the storage itself on separate, dedicated storage resource. Typically, both resources belong to the same cloud computing provider.
 
-![Gaia Architecture](./assets/gaia-storage.png)
+![Gaia Architecture](./resources/gaia-storage.png)
 
 Gaia's approach to decentralization focuses on user control of data and its storage. Users can choose a Gaia hub provider. If a user can choose which Gaia hub provider to use, then that choice is all the decentralization required to enable user-controlled applications. Moreover, Gaia a uniform API to access for applications to access that data.
 
