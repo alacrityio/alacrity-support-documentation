@@ -1,8 +1,8 @@
 ---
-content_title: ALAIO Manual Build
+# ALAIO Manual Build
 ---
 
-[[info | Manual Builds are for Advanced Developers]]
+> Manual Builds are for Advanced Developers]]
 | These manual instructions are intended for advanced developers. The [Shell Scripts](../01_shell-scripts/index.md) should be the preferred method to build ALAIO from source. If the script fails or your platform is not supported, continue with the instructions below.
 
 ## ALAIO Dependencies

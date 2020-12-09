@@ -1,5 +1,5 @@
 ---
-content_title: nodeos State History
+# nodeos State History
 ---
 
 ## nodeos Configuration

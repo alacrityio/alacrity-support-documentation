@@ -1,5 +1,5 @@
 ---
-content_title: Download ALAIO Source
+# Download ALAIO Source
 ---
 
 To download the ALAIO source code, clone the `eos` repo and its submodules. It is adviced to create a home `alaio` folder first and download all the ALAIO related software there:
@@ -27,5 +27,5 @@ When pulling changes, especially after switching branches, the submodules *must*
 git pull --recurse-submodules
 ```
 
-[[info | What's Next?]]
+> What's Next?]]
 | [Build ALAIO binaries](02_build-alaio-binaries.md)

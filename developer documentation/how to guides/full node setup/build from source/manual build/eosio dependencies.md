@@ -1,5 +1,5 @@
 ---
-content_title: ALAIO Software Dependencies
+# ALAIO Software Dependencies
 ---
 
 The ALAIO software requires specific software dependencies to build the ALAIO binaries. These dependencies can be built from source or installed from binaries directly. Dependencies can be pinned to a specific version release or unpinned to the current version, usually the latest one. The main ALAIO dependencies hosted outside the ALAIO repos are:

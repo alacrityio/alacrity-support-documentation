@@ -1,5 +1,5 @@
 ---
-content_title: Platforms
+# Platforms
 ---
 
 * [Amazon Linux 2](amazon_linux-2.md)

@@ -1,10 +1,10 @@
 ---
-content_title: Ubuntu 18.04
+# Ubuntu 18.04
 ---
 
 This section contains shell commands to manually download, build, install, test, and uninstall ALAIO and dependencies on Ubuntu 18.04.
 
-[[info | Building ALAIO is for Advanced Developers]]
+> Building ALAIO is for Advanced Developers]]
 | If you are new to ALAIO, it is recommended that you install the [ALAIO Prebuilt Binaries](../../../00_install-prebuilt-binaries.md) instead of building from source.
 
 Select a task below, then copy/paste the shell commands to a Unix terminal to execute:
@@ -16,7 +16,7 @@ Select a task below, then copy/paste the shell commands to a Unix terminal to ex
 * [Test ALAIO](#test-alaio)
 * [Uninstall ALAIO](#uninstall-alaio)
 
-[[info | Building ALAIO on another OS?]]
+> Building ALAIO on another OS?]]
 | Visit the [Build ALAIO from Source](../../index.md) section.
 
 ## Download ALAIO Repository

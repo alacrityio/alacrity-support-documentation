@@ -1,5 +1,5 @@
 ---
-content_title: Creating WASMs
+# Creating WASMs
 ---
 
 The sources for a minimal WASM pair include:

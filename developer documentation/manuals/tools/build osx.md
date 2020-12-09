@@ -1,5 +1,5 @@
 ---
-content_title: OSX Mojave instructions
+# OSX Mojave instructions
 ---
 
 These instructions assume:

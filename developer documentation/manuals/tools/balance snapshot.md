@@ -1,5 +1,5 @@
 ---
-content_title: Balance Snapshot Example
+# Balance Snapshot Example
 ---
 
 This example collects a snapshot of system token balances. At a requested block number it collects these for all accounts and saves the result

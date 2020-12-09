@@ -1,5 +1,5 @@
 ---
-content_title: Install ALAIO Binaries
+# Install ALAIO Binaries
 ---
 
 ## ALAIO install script
@@ -20,5 +20,5 @@ cd ~/alaio/eos/build
 sudo make install
 ```
 
-[[info | What's Next?]]
+> What's Next?]]
 | Configure and use [Nodeos](../../../01_nodeos/index.md), or optionally [Test the ALAIO binaries](04_test-alaio-binaries.md).

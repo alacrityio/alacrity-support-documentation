@@ -1,5 +1,5 @@
 ---
-content_title: Ubuntu Server 18.04 instructions
+# Ubuntu Server 18.04 instructions
 ---
 
 These instructions assume:

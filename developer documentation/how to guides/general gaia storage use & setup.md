@@ -106,4 +106,4 @@ Alternatively, the user's client can use the authentication scheme and generate 
 ## 3. Gaia Setup
 
 * [Set up Gaia hub with Alaio](/docs/protocol/5._Alaio_Gaia_Storage.md)
-* [Set up Gaia hub with Blockstacks](https://docs.blockstack.org/data-storage/storage-guide)&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i>
+* [Set up Gaia hub with Blockstacks](https://docs.blockstack.org/data-storage/storage-guide)&nbsp;&nbsp;<i class="fas fa-external-link-alt"></i>

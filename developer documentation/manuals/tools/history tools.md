@@ -2,7 +2,7 @@
 
 The ALAIO History Tools is a legacy, proof-of-concept (PoC) application that demonstrates scalable and efficient access to finalized blockchain data via the nodeos state-history plugin.
 
-[[info | Disclaimer]]
+> Disclaimer]]
 | History Tools was originally devised as a PoC to request community feedback. Therefore, some of its components have been or will be integrated with future versions of the ALAIO software.
 
 ## Migration Notice

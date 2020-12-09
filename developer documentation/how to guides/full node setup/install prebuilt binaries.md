@@ -1,8 +1,8 @@
 ---
-content_title: Install Prebuilt Binaries
+# Install Prebuilt Binaries
 ---
 
-[[info | Previous Builds]]
+> Previous Builds]]
 | If you have previously installed ALAIO from source using shell scripts, you must first run the [Uninstall Script](01_build-from-source/01_shell-scripts/05_uninstall-alaio.md) before installing any prebuilt binaries on the same OS.
 
 ## Prebuilt Binaries

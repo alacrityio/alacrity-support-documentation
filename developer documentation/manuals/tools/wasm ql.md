@@ -1,5 +1,5 @@
 ---
-content_title: wasm-ql
+# wasm-ql
 ---
 
 ```dot-svg

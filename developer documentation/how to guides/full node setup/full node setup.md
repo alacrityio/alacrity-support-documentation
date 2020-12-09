@@ -1,5 +1,5 @@
 ---
-content_title: ALAIO Software Installation
+# ALAIO Software Installation
 ---
 
 There are various ways to install and use the ALAIO software:
@@ -20,5 +20,5 @@ ALAIO currently supports the following operating systems:
 4. Ubuntu 18.04
 5. MacOS 10.14 (Mojave)
 
-[[info | Note]]
+> Note]]
 | It may be possible to install ALAIO on other Unix-based operating systems. This is not officially supported, though.

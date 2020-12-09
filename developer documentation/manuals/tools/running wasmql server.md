@@ -1,5 +1,5 @@
 ---
-content_title: Running a wasm-ql Server
+# Running a wasm-ql Server
 ---
 
 A wasm-ql system needs:

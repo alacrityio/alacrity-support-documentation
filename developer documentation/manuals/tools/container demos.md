@@ -1,5 +1,5 @@
 ---
-content_title: Containerized Demos
+# Containerized Demos
 ---
 
 These self-contained demonstrations run in transient containers.

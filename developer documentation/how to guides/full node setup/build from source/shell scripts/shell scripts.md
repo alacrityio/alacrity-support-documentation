@@ -1,8 +1,8 @@
 ---
-content_title: Shell Scripts
+# Shell Scripts
 ---
 
-[[info | Did you know?]]
+> Did you know?]]
 | Shell scripts automate the process of building, installing, testing, and uninstalling the ALAIO software and dependencies.
 
 To build ALAIO from the source code using shell scripts, visit the sections below:
@@ -13,5 +13,5 @@ To build ALAIO from the source code using shell scripts, visit the sections belo
 4. [Test ALAIO Binaries](04_test-alaio-binaries.md)
 5. [Uninstall ALAIO](05_uninstall-alaio.md)
 
-[[info | Building ALAIO is for Advanced Developers]]
+> Building ALAIO is for Advanced Developers]]
 | If you are new to ALAIO, it is recommended that you install the [ALAIO Prebuilt Binaries](../../00_install-prebuilt-binaries.md) instead of building from source.

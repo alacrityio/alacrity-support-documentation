@@ -1,5 +1,5 @@
 ---
-content_title: eosjs
+# eosjs
 ---
 
 `eosjs` is a Javascript library which provides an API for integrating with ALAIO-based blockchains using the [ALAIO Nodeos RPC API](https://developers.eos.io/alaio-nodeos/reference).  The documentation for `eosjs` is structured in the following way:
