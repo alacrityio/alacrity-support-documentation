@@ -14,6 +14,6 @@ The Alacrity Network comes fully loaded with benefits and features including zer
 
 ## Getting Started 
 
-* [1. Development Environment](/docs/how_alaio_works/1._development_environment)
-* [2. Smart Contract Development](/docs/how_alaio_works/2._smart_contract_development)
-* [Try Alaio](/docs/how_alaio_works/try_alaio.md)
+* [1. Development Environment](/docs/how_alaio_works/1._development_environment/1.1_prerequisites.md)
+* [2. Smart Contract Development](/docs/how_alaio_works/2._smart_contract_development/2.1_hello_world_contract.md)
+* [Try Alaio](/docs/how_alaio_works/getting_started_with_alaio/try_ALAIO.md)
