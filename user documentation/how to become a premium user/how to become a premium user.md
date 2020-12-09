@@ -1,4 +1,5 @@
 # How To Become A Premium User
+
 ## Participating In Governance Campaigns
 
 Click on the "CreateID" button on the Alacrity homepage, which will open the account creation menu.  To create a user ID on the Alacrity platform, simply fill out the fields as prompted:
