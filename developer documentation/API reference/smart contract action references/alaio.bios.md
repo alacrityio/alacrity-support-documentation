@@ -156,7 +156,7 @@ params | - New blockchain parameters to set
 
 **Type:** void
 
-Require authorization action, checks if the account name `from` passed in as param has authorization to access current action, that is, if it is listed in the action’s allowed permissions vector.
+Require authorization action, checks if the account name `from` passed in as param has authorization to access current action, that is, if it is listed in the action's allowed permissions vector.
 
 Parameter Name | Description
 --- | ---

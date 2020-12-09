@@ -25,7 +25,7 @@ The Init action initializes the system contract for a version and a symbol. Only
 * version is 0 and
 * symbol is found and
 * system token supply is greater than 0,
-* and system contract wasn’t already been initialized.
+* and system contract wasn't already been initialized.
 
 Parameter Name | Description
 --- | ---

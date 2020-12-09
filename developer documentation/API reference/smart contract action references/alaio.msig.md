@@ -15,7 +15,7 @@ In short, the workflow to propose, review, approve and then executed a transacti
 
 **Type:** void
 
-Propose action, creates a proposal containing one transaction. Allows an account proposer to make a proposal proposal_name which has requested permission levels expected to approve the proposal, and if approved by all expected permission levels then trx transaction can we executed by this proposal. The proposer account is authorized and the trx transaction is verified if it was authorized by the provided keys and permissions, and if the proposal name doesn’t already exist; if all validations pass the proposal_name and trx trasanction are saved in the proposals table and the requested permission levels to the approvals table (for the proposer context). Storage changes are billed to proposer.
+Propose action, creates a proposal containing one transaction. Allows an account proposer to make a proposal proposal_name which has requested permission levels expected to approve the proposal, and if approved by all expected permission levels then trx transaction can we executed by this proposal. The proposer account is authorized and the trx transaction is verified if it was authorized by the provided keys and permissions, and if the proposal name doesn't already exist; if all validations pass the proposal_name and trx trasanction are saved in the proposals table and the requested permission levels to the approvals table (for the proposer context). Storage changes are billed to proposer.
 
 Parameter Name | Description
 --- | ---

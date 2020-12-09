@@ -2,11 +2,11 @@
 
 ## The Next Generation of User Friendly Blockchain
 
-Blockchain is uniquely positioned to solve the problems currently facing the internet as we know it. Though there are others, Alacrity’s innovative approach with its unique blend of features and technical advantages will see it be the first to achieve this milestone.
+Blockchain is uniquely positioned to solve the problems currently facing the internet as we know it. Though there are others, Alacrity's innovative approach with its unique blend of features and technical advantages will see it be the first to achieve this milestone.
 
-## Alacrity’s Integrated Oracle
+## Alacrity's Integrated Oracle
 
-Blockchains though advanced still aren’t able to access external data without an Oracle. At the height of innovation, Alacrity is the first blockchain with a full oracle inherently integrated into its network. Essentially, in just a few technological strokes Alacrity gives you access to the world in its entirety.
+Blockchains though advanced still aren't able to access external data without an Oracle. At the height of innovation, Alacrity is the first blockchain with a full oracle inherently integrated into its network. Essentially, in just a few technological strokes Alacrity gives you access to the world in its entirety.
 
 ## Benefits
 
@@ -14,6 +14,6 @@ The Alacrity Network comes fully loaded with benefits and features including zer
 
 ## Getting Started 
 
-* 1. [Development Environment](/docs/how_alaio_works/1._development_environment)
-* 2. [Smart Contract Development](/docs/how_alaio_works/2._smart_contract_development)
-* 3. [Try Alaio](/docs/how_alaio_works/try_alaio.md)
+* [1. Development Environment](/docs/how_alaio_works/1._development_environment)
+* [2. Smart Contract Development](/docs/how_alaio_works/2._smart_contract_development)
+* [Try Alaio](/docs/how_alaio_works/try_alaio.md)
