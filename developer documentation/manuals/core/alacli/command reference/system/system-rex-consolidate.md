@@ -1,6 +1,5 @@
----
-title: "system rex consolidate"
-excerpt: "Consolidate REX maturity buckets into one that matures in 4 days"
+# system rex consolidate
+> Consolidate REX maturity buckets into one that matures in 4 days
 ---
 ## Positionals
 - `owner` _TEXT_ - Account which owns the REX fund (required)

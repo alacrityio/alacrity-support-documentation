@@ -1,6 +1,5 @@
----
-title: "system regproxy"
-excerpt: "Register an account as a proxy (for voting)"
+# system regproxy
+> Register an account as a proxy (for voting)
 ---
 ## Positional Arguments
 `proxy` _TEXT_ - The proxy account to register

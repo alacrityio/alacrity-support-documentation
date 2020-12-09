@@ -1,6 +1,5 @@
----
-title: "system rex deposit"
-excerpt: "Deposit into owner's REX fund by transfering from owner's liquid token balance"
+# system rex deposit
+> Deposit into owner's REX fund by transfering from owner's liquid token balance
 ---
 ## Positionals
 - `owner` _TEXT_ - Account which owns the REX fund (required)

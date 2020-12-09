@@ -1,6 +1,5 @@
----
-title: "system rex fundnetloan"
-excerpt: "Deposit into a Network loan fund"
+# system rex fundnetloan
+> Deposit into a Network loan fund
 ---
 ## Positionals
 - `from` _TEXT_ - Loan owner (required)

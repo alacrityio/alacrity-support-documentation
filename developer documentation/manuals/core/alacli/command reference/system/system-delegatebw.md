@@ -1,6 +1,5 @@
----
-title: "system delegatebw"
-excerpt: "Delegate bandwidth"
+# system delegatebw
+> Delegate bandwidth
 ---
 ## Positional Arguments
 - `from` _TEXT_ - The account undelegating bandwidth

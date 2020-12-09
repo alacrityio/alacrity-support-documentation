@@ -1,6 +1,5 @@
----
-title: "system rex lendrex"
-excerpt: "Deposit tokens to REX fund and use the tokens to buy REX"
+# system rex lendrex
+> Deposit tokens to REX fund and use the tokens to buy REX
 ---
 ## Positionals
 - `from` _TEXT_ - Account buying REX tokens (required)

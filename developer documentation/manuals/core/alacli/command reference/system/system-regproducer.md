@@ -1,6 +1,5 @@
----
-title: "system regproducer"
-excerpt: "Register a new producer"
+# system regproducer
+> Register a new producer
 ---
 ## Positional Arguments
 - `account` _TEXT_ - The account to register as a producer

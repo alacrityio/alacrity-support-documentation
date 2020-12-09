@@ -1,6 +1,5 @@
----
-title: "system rex fundcpuloan"
-excerpt: "Deposit into a CPU loan fund"
+# system rex fundcpuloan
+> Deposit into a CPU loan fund
 ---
 ## Positionals
 

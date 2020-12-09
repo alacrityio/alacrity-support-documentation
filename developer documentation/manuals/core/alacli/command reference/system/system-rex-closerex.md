@@ -1,6 +1,5 @@
----
-title: "system rex closerex"
-excerpt: "Delete unused REX-related user table entries"
+# system rex closerex
+> Delete unused REX-related user table entries
 ---
 ## Positionals
 - `owner` _TEXT_ - Account which owns the REX fund (required)

@@ -1,6 +1,5 @@
----
-title: "system rex defundcpuloan"
-excerpt: "Withdraw from a CPU loan fund"
+# system rex defundcpuloan
+> Withdraw from a CPU loan fund
 ---
 ## Positionals
 - `from` _TEXT_ - Loan owner (required)

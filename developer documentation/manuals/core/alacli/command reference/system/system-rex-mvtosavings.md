@@ -1,6 +1,5 @@
----
-title: "system rex mvtosavings"
-excerpt: "Move REX tokens to savings bucket"
+# system rex mvtosavings
+> Move REX tokens to savings bucket
 ---
 ## Positionals
 - `owner` _TEXT_ - Account which owns the REX fund (required)

@@ -1,6 +1,5 @@
----
-title: "system rex cancelrexorder"
-excerpt: "Cancel queued REX sell order if one exists"
+# system rex cancelrexorder
+> Cancel queued REX sell order if one exists
 ---
 ## Positionals
 - `owner` _TEXT_ - Owner account of sell order (required)
