@@ -21,7 +21,18 @@ To claim the DAPP reward, first you must have a DAPP on the [DAPP store](https:/
 ![Submit DAPP](https://raw.githubusercontent.com/alacrityio/alacrity-support-documentation/main/user%20documentation/resources/image40.png)<br>
 
 Register your DAPP on this page to have it displayed on the Alacrity website.
-As you register your application you can choose a simple human readable name for your DAPP.<br> You will be required to add a DAPP Name **(can’t be changed later)**, a DAPP URL, an Email ID, a Category under which your app could be best organized, DAPP freeform description or features of app added under Details,<br> DAPP Preference **(can’t be changed later)**, Logo, Product Screenshots (optional), and acceptance of both user license agreement | DAPP license agreement Terms & Conditions.
+As you register your application you can choose a simple human readable name for your DAPP.
+
+You will be required to add a:
+* `DAPP Name` **(can't be changed later)**
+* a `DAPP URL`
+* an `Email ID`
+* a `Category` under which your app could be best organized
+* `DAPP freeform description` or features of app added under `Details`
+* `DAPP Preference` **(can't be changed later)**
+* a Logo
+* Product Screenshots (optional)
+* and acceptance of both user license agreement | DAPP license agreement Terms & Conditions.
 
 **Make sure to select which reward type you want your application to earn with- users or monetary (token) volume. This will determine the amount of reward earned by the DAPP per each block; and based on the preference for reward type chosen, they will be available as ALA tokens at the end of the 30 days.**
 
