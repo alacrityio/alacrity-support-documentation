@@ -1,5 +1,5 @@
 # Governance
-Alacrity Governance consists of two main systems: Node voting and Governance voting.
+Alacrity Governance consists of two main systems: **Node voting** and **Governance voting**.
 
 ## Node Voting
 Node voting is the process by which users vote to select current block producers.
