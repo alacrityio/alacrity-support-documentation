@@ -1,4 +1,4 @@
-## How to use the app.Alacritys.net web interface
+# How to use the app.Alacritys.net web interface
 
 The App.Alacritys.net web interface makes the Alacrity network accessible from anywhere! Simply visit [https://app.alacritys.net/](https://app.alacritys.net/) and login to conveniently access your Profile, Wallet, and the DAPP store.
 
