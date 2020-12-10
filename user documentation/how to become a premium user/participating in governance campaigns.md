@@ -25,7 +25,7 @@ A Magic Recovery Code is available on the **Setting**>Backup & Restore page.<br>
 1. Enter the Magic Recovery Code, password, and then email used to register to sign in to the platform. <br>
 2. The Alacrity Network makes use of local data when using a device which has logged in before to enable faster login later.<br>
 
-### Secret Recovery Code**<br>
+### Secret Recovery Code
 1. Enter the 12 word mnemonic Secret Recovery Key provided at signup.<br> 
 2. You will be prompted to enter a new password and provide the email address initially  used to register. <br>
 
