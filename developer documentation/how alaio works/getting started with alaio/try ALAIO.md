@@ -10,4 +10,4 @@ Experiment on the ALAIO Testnet with the latest stable release of the ALAIO soft
 
 ## What's Next?
 
-* [Get Started](somelink.com): Install ALAIO in yout local development environment.
+* [Get Started](https://developer.alacritys.net/docs/how_alaio_works/getting_started_with_alaio/1._development_environment/1.1_prerequisites.md): Set up your development environment.
