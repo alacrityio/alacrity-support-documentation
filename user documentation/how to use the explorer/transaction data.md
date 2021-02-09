@@ -3,4 +3,6 @@ Transaction data can be accessed from the Explorer main menu; Transactions will 
 
 ![Transactions](https://raw.githubusercontent.com/alacrityio/alacrity-support-documentation/main/user%20documentation/resources/image17.png)
 
+![Transaction](https://raw.githubusercontent.com/alacrityio/alacrity-support-documentation/main/user%20documentation/resources/transaction.png)
+
 ![Transaction Data](https://raw.githubusercontent.com/alacrityio/alacrity-support-documentation/main/user%20documentation/resources/image19.png)
