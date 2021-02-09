@@ -9,7 +9,7 @@ In the Dashboard for example, the most recent blocks produced, Alacrity's Networ
 Navigate to specific pages for information about each using the top left menu (Dashboard, Producers, Blocks, Transactions, Audit Trail) or Search for specific data by using the Search bar in the upper right.
 
 
-### 1. [Search](https://support.alacritys.net/docs/how_to_use_the_explorer/search.md)
+### 1. [Search](https://support.alacritys.net/docs/how_to_use_the_explorer/explore.md)
 ### 2. [Transaction data](https://support.alacritys.net/docs/how_to_use_the_explorer/transaction_data.md)
 ### 3. [Blocks Data](https://support.alacritys.net/docs/how_to_use_the_explorer/blocks_data.md)
 ### 4. [Total Supply](https://support.alacritys.net/docs/how_to_use_the_explorer/total_supply.md)
