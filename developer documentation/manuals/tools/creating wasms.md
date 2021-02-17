@@ -54,7 +54,7 @@ struct get_my_tokens_response {
     std::vector<token_balance> balances = {};
     std::optional<alaio::name> more     = {};
 
-    EOSLIB_SERIALIZE(get_my_tokens_response, (balances)(more))
+    ALALIB_SERIALIZE(get_my_tokens_response, (balances)(more))
 };
 
 STRUCT_REFLECT(get_my_tokens_response) {
@@ -204,7 +204,7 @@ export CDT_DIR=/usr/local/alaio.cdt
 $CDT_DIR/bin/alaio-cpp                                                      \
     -Os                                                                     \
     -I $HT_TOOLS_DIR/libraries/alaiolib/wasmql                              \
-    -I $HT_TOOLS_DIR/external/abieos/external/date/include                  \
+    -I $HT_TOOLS_DIR/external/abiala/external/date/include                  \
     $HT_TOOLS_DIR/libraries/alaiolib/wasmql/alaio/temp_placeholders.cpp     \
     -fquery-server                                                          \
     --alaio-imports=$HT_TOOLS_DIR/libraries/alaiolib/wasmql/server.imports  \
@@ -214,7 +214,7 @@ $CDT_DIR/bin/alaio-cpp                                                      \
 $CDT_DIR/bin/alaio-cpp                                                      \
     -Os                                                                     \
     -I $HT_TOOLS_DIR/libraries/alaiolib/wasmql                              \
-    -I $HT_TOOLS_DIR/external/abieos/external/date/include                  \
+    -I $HT_TOOLS_DIR/external/abiala/external/date/include                  \
     $HT_TOOLS_DIR/libraries/alaiolib/wasmql/alaio/temp_placeholders.cpp     \
     -fquery-client                                                          \
     --alaio-imports=$HT_TOOLS_DIR/libraries/alaiolib/wasmql/client.imports  \
@@ -248,7 +248,7 @@ const request = myClientWasm.createQueryRequest(JSON.stringify(
     ['get.my.toks', {
         snapshot_block: ['head', 0],
         code: 'alaio.token',
-        sym: 'EOS',
+        sym: 'ALA',
         first_account: 'alaio',
         last_account: 'alaio.zzzzzz',
         max_results: 10,

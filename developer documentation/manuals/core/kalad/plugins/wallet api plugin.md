@@ -4,7 +4,7 @@
 
 The `wallet_api_plugin` exposes functionality from the `wallet_plugin` to the RPC API interface managed by the `http_plugin`.
 
-> **Caution** <br> <br> This plugin exposes wallets. Therefore, running this plugin on a publicly accessible node is not recommended. As of 1.2.0, the `wallet_api_plugin` is only available through `kalad`. It is no longer supported by `nodeos`.
+> **Caution** <br> <br> This plugin exposes wallets. Therefore, running this plugin on a publicly accessible node is not recommended. As of 1.2.0, the `wallet_api_plugin` is only available through `kalad`. It is no longer supported by `nodala`.
 
 ## Usage
 

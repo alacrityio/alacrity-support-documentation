@@ -23,13 +23,13 @@ Select a task below, then copy/paste the shell commands to a Unix terminal to ex
 These commands set the ALAIO directories, install git, and clone the ALAIO repository.
 ```sh
 # set ALAIO directories
-export ALAIO_LOCATION=~/alaio/eos
+export ALAIO_LOCATION=~/alaio/ala
 export ALAIO_INSTALL_LOCATION=$ALAIO_LOCATION/../install
 mkdir -p $ALAIO_INSTALL_LOCATION
 # install git
 brew update && brew install git
 # clone ALAIO repository
-git clone https://github.com/ALAIO/eos.git $ALAIO_LOCATION
+git clone https://github.com/ALAIO/ala.git $ALAIO_LOCATION
 cd $ALAIO_LOCATION && git submodule update --init --recursive
 ```
 

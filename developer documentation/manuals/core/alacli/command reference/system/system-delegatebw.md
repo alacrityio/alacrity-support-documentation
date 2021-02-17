@@ -4,8 +4,8 @@
 ## Positional Arguments
 - `from` _TEXT_ - The account undelegating bandwidth
 - `receiver` _TEXT_ - The account to undelegate bandwidth from
-- `stake_net_quantity` _TEXT_ - The amount of EOS to delegate for network bandwidth
-- `stake_cpu_quantity` _TEXT_  - The amount of EOS to delegate for CPU bandwidth
+- `stake_net_quantity` _TEXT_ - The amount of ALA to delegate for network bandwidth
+- `stake_cpu_quantity` _TEXT_  - The amount of ALA to delegate for CPU bandwidth
 
 ## Options
 - `-h,--help` Print this help message and exit

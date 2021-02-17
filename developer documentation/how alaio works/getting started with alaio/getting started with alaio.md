@@ -1,14 +1,14 @@
 # Getting Started
 
 * Installing alaio.cdt
-* Using Keosd as local development wallet
-* stating the nodeos daemon
+* Using Kalad as local development wallet
+* stating the nodala daemon
 * Creating accounts
-* EOSIO Smart contract fundamentals
+* ALAIO Smart contract fundamentals
 * Tokens
 * Inline actions
 * Custom Permissions
-* Payable actions using EOSIO `notify` declarations
+* Payable actions using ALAIO `notify` declarations
 
 ## What's next?
 

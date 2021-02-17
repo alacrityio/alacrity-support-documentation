@@ -20,5 +20,5 @@
 
 
 ```sh
-alacli system rex rentcpu accountname1 accountname2 "1 EOS" 0
+alacli system rex rentcpu accountname1 accountname2 "1 ALA" 0
 ```

@@ -47,11 +47,11 @@ This will output something similar to...
     "expiration": "2017-08-24T18:29:52",
     "scope": [
       "currency",
-      "eos"
+      "ala"
     ],
     "signatures": [],
     "messages": [{
-        "code": "eos",
+        "code": "ala",
         "type": "setcode",
         "authorization": [{
             "account": "currency",

@@ -21,5 +21,5 @@
 
 
 ```sh
-alacli system rex fundnetloan accountname1 abc123 "1 EOS"
+alacli system rex fundnetloan accountname1 abc123 "1 ALA"
 ```

@@ -4,7 +4,7 @@ The ALAIO blockchain platform is unique in that the features and characteristics
 
 ## System contracts defined in alaio.contracts
 
-Block.one implements and maintains ALAIO open source platform which contains, as an example, the system contracts encapsulating the base functionality for an ALAIO based blockchain.
+Alacrity implements and maintains ALAIO open source platform which contains, as an example, the system contracts encapsulating the base functionality for an ALAIO based blockchain.
 
 1. [alaio.bios]
 2. [alaio.system]

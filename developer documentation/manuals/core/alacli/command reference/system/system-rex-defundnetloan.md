@@ -25,5 +25,5 @@ Withdraw from a Network loan fund
 
 
 ```sh
-alacli system rex defundnetloan accountname1 abc123 "1 EOS"
+alacli system rex defundnetloan accountname1 abc123 "1 ALA"
 ```

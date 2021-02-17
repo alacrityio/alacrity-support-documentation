@@ -1,6 +1,6 @@
 # ALAIO History Tools ![ALAIO Alpha](https://img.shields.io/badge/ALAIO-Alpha-blue.svg)
 
-The ALAIO History Tools is a legacy, proof-of-concept (PoC) application that demonstrates scalable and efficient access to finalized blockchain data via the nodeos state-history plugin.
+The ALAIO History Tools is a legacy, proof-of-concept (PoC) application that demonstrates scalable and efficient access to finalized blockchain data via the nodala state-history plugin.
 
 > Disclaimer]]
 | History Tools was originally devised as a PoC to request community feedback. Therefore, some of its components have been or will be integrated with future versions of the ALAIO software.
@@ -8,21 +8,21 @@ The ALAIO History Tools is a legacy, proof-of-concept (PoC) application that dem
 ## Migration Notice
 
 The following History Tools components have been migrated to the following ALAIO repositories:
-* `rodeos` (formerly `combo-rocksdb`, `fill-rocksdb`, `wasm-ql-rocksdb`):
-  * service daemon: https://github.com/ALAIO/eos
+* `rodala` (formerly `combo-rocksdb`, `fill-rocksdb`, `wasm-ql-rocksdb`):
+  * service daemon: https://github.com/ALAIO/ala
 * `wasm-ql`:
-  * rodeos support: https://github.com/ALAIO/eos
-  * nodeos support: https://github.com/ALAIO/eos
+  * rodala support: https://github.com/ALAIO/ala
+  * nodala support: https://github.com/ALAIO/ala
   * cdt support: https://github.com/ALAIO/alaio.cdt
 * `abi-wasm`:
   * cdt support: https://github.com/ALAIO/alaio.cdt
-  * eosjs support: https://github.com/ALAIO/eosjs
+  * alaiojs support: https://github.com/ALAIO/alaiojs
 
 ## Components
 
 History Tools consists of the following components:
 
-* **database fillers** -  connect to the nodeos state-history plugin and populate databases
+* **database fillers** -  connect to the nodala state-history plugin and populate databases
 * **wasm-ql servers** - answer incoming queries by running server WASMs, which have read-only access to the databases
 * **wasm-ql library** - when combined with the CDT library, provides utilities that server WASMs and client WASMs need
 * **examples** of server WASMs and client WASMs
@@ -41,7 +41,7 @@ Note: by default, `history-tools` does nothing; use the `--plugin` option to sel
 ## Alpha Release
 
 This is an alpha release of the ALAIO History Tools. It includes database fillers
-(`fill-pg`, `fill-rocksdb`) which pull data from nodeos's State History Plugin, and a new
+(`fill-pg`, `fill-rocksdb`) which pull data from nodala's State History Plugin, and a new
 query engine (`wasm-ql-pg`, `wasm-ql-rocksdb`) which supports queries defined by wasm, along
 with an emulation of the legacy `/v1/` RPC API.
 
@@ -52,13 +52,13 @@ useful. Please create issues about changes you'd like to see going forward.
 Since this is an alpha release, it will likely have incompatible changes in the
 future. Some of these may be driven by community feedback.
 
-This release supports nodeos 1.8.x. It does not support 1.7.x or the 1.8 RC versions. This release
+This release supports nodala 1.8.x. It does not support 1.7.x or the 1.8 RC versions. This release
 includes the following:
 
 ### Alpha 0.3.0
 
-This release adds temporary workarounds to `fill-pg` to support Nodeos 2.0. It also disables the remaining tools. If you would
-like to test rocksdb support or wasm-ql support, stick with Nodeos 1.8 and the Alpha 0.2.0 release of History Tools.
+This release adds temporary workarounds to `fill-pg` to support Nodala 2.0. It also disables the remaining tools. If you would
+like to test rocksdb support or wasm-ql support, stick with Nodala 1.8 and the Alpha 0.2.0 release of History Tools.
 
 * Temporary `fill-pg` fixes
   * Removed the `global_property` table
@@ -78,14 +78,14 @@ like to test rocksdb support or wasm-ql support, stick with Nodeos 1.8 and the A
 * Database fillers no longer need `--fill-skip-to` when starting from partial history.
 * Database fillers now automatically reconnect to the State History Plugin.
 * wasm-ql now uses a thread pool to handle queries. `--wql-threads` controls the thread pool size.
-* wasm-ql now uses eos-vm instead of SpiderMonkey. This simplifies the build process.
+* wasm-ql now uses ala-vm instead of SpiderMonkey. This simplifies the build process.
 * wasm-ql can now serve static files. Enabled by the new `--wql-static-dir` option.
 * SHiP connection handling moved to `state_history_connection.hpp`. This file may aid users needing
   to write custom solutions which connect to the State History Plugin.
 
 ### fill-pg
 
-`fill-pg` fills postgresql with data from nodeos's State History Plugin. It provides nearly all
+`fill-pg` fills postgresql with data from nodala's State History Plugin. It provides nearly all
 data that applications which monitor the chain need. It provides the following:
 
 * Header information from each block
@@ -109,10 +109,10 @@ don't need the blocks since:
   applications need to handle these, so should examine the traces instead. e.g. many transfers
   live in the inline actions and deferred transactions that blocks exclude.
 * Most apps don't verify block signatures. If they do, then they should connect directly to
-  nodeos's State History Plugin to get the necessary data. Note that contrary to
+  nodala's State History Plugin to get the necessary data. Note that contrary to
   popular belief, the data returned by the `/v1/get_block` RPC API is insufficient for
   signature verification since it uses a lossy JSON conversion.
-* Most apps which currently use the `/v1/get_block` RPC API (e.g. `eosjs`) only need a tiny
+* Most apps which currently use the `/v1/get_block` RPC API (e.g. `alaiojs`) only need a tiny
   subset of the data within block; `fill-pg` stores this data. There are apps which use
   `/v1/get_block` incorrectly since their authors didn't realize the blocks miss
   critical data that their applications need.

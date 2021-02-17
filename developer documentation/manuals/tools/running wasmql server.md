@@ -3,7 +3,7 @@
 ---
 
 A wasm-ql system needs:
-* nodeos running the state-history plugin, with either full or recent history
+* nodala running the state-history plugin, with either full or recent history
 * A database: PostgreSQL or RocksDB
 * A database filler
 * 1 or more wasm-ql server processes

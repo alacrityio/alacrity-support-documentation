@@ -11,7 +11,7 @@ From plain signed json to packed form
 ## Options
 
 * `-h,--help` - Print this help message and exit
-* `--pack-action-data` - Pack all action data within transaction, needs interaction with nodeos
+* `--pack-action-data` - Pack all action data within transaction, needs interaction with nodala
 
 ## Usage
 

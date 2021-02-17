@@ -1,4 +1,4 @@
-# Keosd Plugins
+# Kalad Plugins
 
 ## Overview
 
@@ -8,4 +8,4 @@ Plugins extend the core functionality implemented in `kalad`. For information on
 * `wallet_api_plugin`
 * `wallet_plugin`
 
-> **Keosd is modular** <br> <br> Plugins add incremental functionality to `kalad`. Unlike runtime plugins, `kalad` plugins are built at compile-time.
+> **Kalad is modular** <br> <br> Plugins add incremental functionality to `kalad`. Unlike runtime plugins, `kalad` plugins are built at compile-time.

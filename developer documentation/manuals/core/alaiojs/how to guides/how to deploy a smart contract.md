@@ -1,4 +1,4 @@
-In order to deploy a smart contract using `eosjs`, call the [`setcode`](https://github.com/ALAIO/alaio.contracts/blob/52fbd4ac7e6c38c558302c48d00469a4bed35f7c/contracts/alaio.system/include/alaio.system/native.hpp#L294) followed by the [`setabi`](https://github.com/ALAIO/alaio.contracts/blob/52fbd4ac7e6c38c558302c48d00469a4bed35f7c/contracts/alaio.system/include/alaio.system/native.hpp#L281) actions of the `alaio` account.
+In order to deploy a smart contract using `alaiojs`, call the [`setcode`](https://github.com/ALAIO/alaio.contracts/blob/52fbd4ac7e6c38c558302c48d00469a4bed35f7c/contracts/alaio.system/include/alaio.system/native.hpp#L294) followed by the [`setabi`](https://github.com/ALAIO/alaio.contracts/blob/52fbd4ac7e6c38c558302c48d00469a4bed35f7c/contracts/alaio.system/include/alaio.system/native.hpp#L281) actions of the `alaio` account.
 
 ## setcode
 `setcode` takes the name of the account where the smart contract will be deployed to and the smart contract **.wasm** file.  The smart contract **.wasm** file should be a hex string.  Assuming that a valid **.wasm** file is located at `/mypath/my_smart_contract.wasm`, converting a smart contract to a hex string can be accomplished using the code below.
@@ -49,7 +49,7 @@ abiJSON = abiDefinitions.fields.reduce(
 abiDefinitions.serialize(buffer, abiJSON)
 serializedAbiHexString = Buffer.from(buffer.asUint8Array()).toString('hex')
 ```
-Note that the `api` object from [initialization](../basic-usage/01_commonjs.md) is used for it's `textEncoder`and `textDecoder` objects, as well as it's [`abiTypes`](https://github.com/ALAIO/eosjs/blob/849c03992e6ce3cb4b6a11bf18ab17b62136e5c9/src/eosjs-api.ts#L72) map.
+Note that the `api` object from [initialization](../basic-usage/01_commonjs.md) is used for it's `textEncoder`and `textDecoder` objects, as well as it's [`abiTypes`](https://github.com/ALAIO/alaiojs/blob/849c03992e6ce3cb4b6a11bf18ab17b62136e5c9/src/alaiojs-api.ts#L72) map.
 
 This line in particular:
 ```javascript
@@ -59,7 +59,7 @@ abiJSON = abiDefinitions.fields.reduce(
         abiJSON
     )
 ```
-ensures that the **.abi** file contains [the fields that an **.abi** file is expected to contain](https://github.com/ALAIO/eosjs/blob/849c03992e6ce3cb4b6a11bf18ab17b62136e5c9/src/abi.abi.json#L151).  Note that if an expected field is missing, the call to `serialize` will [throw an exception](https://github.com/ALAIO/eosjs/blob/849c03992e6ce3cb4b6a11bf18ab17b62136e5c9/src/eosjs-serialize.ts#L644) indicating the missing field.
+ensures that the **.abi** file contains [the fields that an **.abi** file is expected to contain](https://github.com/ALAIO/alaiojs/blob/849c03992e6ce3cb4b6a11bf18ab17b62136e5c9/src/abi.abi.json#L151).  Note that if an expected field is missing, the call to `serialize` will [throw an exception](https://github.com/ALAIO/alaiojs/blob/849c03992e6ce3cb4b6a11bf18ab17b62136e5c9/src/alaiojs-serialize.ts#L644) indicating the missing field.
 
 ## Deploying a Smart Contract
 Below the two actions are submitted as one transaction using the `Api` object.

@@ -64,7 +64,7 @@ With the exception of the softfloat library, which is an external dependency, __
 
 Given the needs of the end user, integration can be as simple as pointing to the include directory.
 
-__ALA-VM__ utilizes __CMake__ which allows integration into a project to be as little as adding `eos-vm` to the list of targets in the `target_link_libraries`.
+__ALA-VM__ utilizes __CMake__ which allows integration into a project to be as little as adding `ala-vm` to the list of targets in the `target_link_libraries`.
 
 If the need is only single-threaded a self-contained backend type is defined for the user to encapsulate all the components needed, which allows for source code integration to be constructing an instance of that type and adding "host functions" to the `registered_host_functions`.  Registering the host functions is as easy as calling a function with the function/member pointer and supplying the Wasm module name and function name.
 

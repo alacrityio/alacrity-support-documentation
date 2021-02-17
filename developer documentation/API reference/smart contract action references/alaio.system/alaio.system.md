@@ -1,6 +1,6 @@
 # ALAIO.system
 
-The alaio.system smart contract is provided by block.one as a sample system contract, and it defines the structures and actions needed for blockchain's core functionality.
+The alaio.system smart contract is provided by Alacrity as a sample system contract, and it defines the structures and actions needed for blockchain's core functionality.
 
 Just like in the alaio.bios sample contract implementation, there are a few actions which are not implemented at the contract level (newaccount, updateauth, deleteauth, linkauth, unlinkauth, canceldelay, onerror, setabi, setcode), they are just declared in the contract so they will show in the contract's ABI and users will be able to push those actions to the chain via the account holding the alaio.system contract, but the implementation is at the ALAIO core level. They are referred to as ALAIO native actions.
 

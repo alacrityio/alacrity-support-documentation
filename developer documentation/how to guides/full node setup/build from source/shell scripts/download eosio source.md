@@ -2,11 +2,11 @@
 # Download ALAIO Source
 ---
 
-To download the ALAIO source code, clone the `eos` repo and its submodules. It is adviced to create a home `alaio` folder first and download all the ALAIO related software there:
+To download the ALAIO source code, clone the `ala` repo and its submodules. It is adviced to create a home `alaio` folder first and download all the ALAIO related software there:
 
 ```sh
 mkdir -p ~/alaio && cd ~/alaio
-git clone --recursive https://github.com/ALAIO/eos
+git clone --recursive https://github.com/ALAIO/ala
 ```
 
 ## Update Submodules
@@ -14,7 +14,7 @@ git clone --recursive https://github.com/ALAIO/eos
 If a repository is cloned without the `--recursive` flag, the submodules *must* be updated before starting the build process:
 
 ```sh
-cd ~/alaio/eos
+cd ~/alaio/ala
 git submodule update --init --recursive
 ```
 

@@ -36,7 +36,7 @@ Retrieves a transaction from the blockchain
       "1f22e64240e1e479eee6ccbbd79a29f1a6eb6020384b4cca1a958e7c708d3e562009ae6e60afac96f9a3b89d729a50cd5a7b5a7a647540ba1678831bf970e83312"
     ],
     "messages": [{
-        "code": "eos",
+        "code": "ala",
         "type": "transfer",
         "authorization": [{
             "account": "inita",

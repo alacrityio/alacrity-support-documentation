@@ -3,7 +3,7 @@
 * [History Tools](history-tools.md)
 * [Containerized Demos](container-demos.md)
 * [Database Fillers](database-fillers.md)
-    * [nodeos State History](nodeos-state-history.md)
+    * [nodala State History](nodala-state-history.md)
 * [wasm-ql](wasm-ql.md)
     * [Running a Server](running-wasmql-server.md)
     * [Using Client WASMs](using-client-wasms.md)

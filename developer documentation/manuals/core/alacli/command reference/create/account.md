@@ -47,12 +47,12 @@ A set of ALAIO keys is required to create an account. The ALAIO keys can be gene
     "refBlockPrefix": "2095475630",
     "expiration": "2017-07-25T17:54:55",
     "scope": [
-      "eos",
+      "ala",
       "inita"
     ],
     "signatures": [],
     "messages": [{
-        "code": "eos",
+        "code": "ala",
         "type": "newaccount",
         "authorization": [{
             "account": "inita",

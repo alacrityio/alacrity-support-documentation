@@ -21,5 +21,5 @@
 ## Examples
 
 ```sh
-alacli system rex defundcpuloan accountname1 abc123 "1 EOS"
+alacli system rex defundcpuloan accountname1 abc123 "1 ALA"
 ```

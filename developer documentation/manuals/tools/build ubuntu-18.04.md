@@ -74,7 +74,7 @@ make -j10 install
 
 ```
 cd ~
-wget https://github.com/ALAIO/eos/releases/download/v1.8.10/alaio_1.8.10-1-ubuntu-18.04_amd64.deb
+wget https://github.com/ALAIO/ala/releases/download/v1.8.10/alaio_1.8.10-1-ubuntu-18.04_amd64.deb
 sudo apt install -y ./alaio_1.8.10-1-ubuntu-18.04_amd64.deb
 ```
 

@@ -1,4 +1,4 @@
-# Keosd Usage
+# Kalad Usage
 > Recommended Usage <br> <br> For most users, the easiest way to use `kalad` is to have alacli launch it automatically. Wallet files will be created in the default directory (~/alaio-wallet).
 
 ## Launching kalad manually

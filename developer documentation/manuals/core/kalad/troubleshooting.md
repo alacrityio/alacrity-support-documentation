@@ -1,4 +1,4 @@
-# Keosd Troubleshooting
+# Kalad Troubleshooting
 
 ## **How to solve the error "Failed to lock access to wallet directory; is another `kalad` running"?**
 

@@ -1,4 +1,4 @@
-# Cleos FAQ
+# Clala FAQ
 
 ## Domain Socket (IPC) vs. HTTPS (RPC)
 
@@ -6,4 +6,4 @@ There are two options to connect `alacli` to `kalad`. You can either use domain 
 
 ## What does "transaction executed locally, but may not be confirmed by the network yet" means?
 
-It means the transaction has been successfully accepted and executed by the instance of nodeos that `alacli` submitted it directly to. That instance of nodeos should relay the transaction to additional instances via the peer-to-peer protocol but, there is no guarantee that these additional instances accepted or executed the transaction. There is also no guarantee, at this point, that the transaction has been accepted and executed by a valid block producer and subsequently included in a valid block in the blockchain. If you require stronger confirmation of a transaction's inclusion in the immutable blockchain, you must take extra steps to monitor for the transaction's presence in an irreversible block
+It means the transaction has been successfully accepted and executed by the instance of nodala that `alacli` submitted it directly to. That instance of nodala should relay the transaction to additional instances via the peer-to-peer protocol but, there is no guarantee that these additional instances accepted or executed the transaction. There is also no guarantee, at this point, that the transaction has been accepted and executed by a valid block producer and subsequently included in a valid block in the blockchain. If you require stronger confirmation of a transaction's inclusion in the immutable blockchain, you must take extra steps to monitor for the transaction's presence in an irreversible block

@@ -1,4 +1,4 @@
-# Keosd FAQ
+# Kalad FAQ
 
 ## **How does `kalad` store key pairs**
 

@@ -1,4 +1,4 @@
-# Keosd Security
+# Kalad Security
 
 ### **How does `kalad` Locking/Unlocking works and what are the security implications?**
 

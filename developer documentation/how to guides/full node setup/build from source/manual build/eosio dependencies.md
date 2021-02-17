@@ -31,7 +31,7 @@ Regular users or application developers may prefer installing unpinned versions 
 ALAIO dependencies can be built or installed automatically from the [Build Script](../01_shell-scripts/02_build-alaio-binaries.md) when building ALAIO from source. To build the pinned dependencies, the optional `-P` parameter can be specified when invoking the script. Otherwise, the unpinned dependencies will be installed instead, with the exception of `boost` and `cmake` which are always pinned:
 
 ```sh
-cd ~/alaio/eos
+cd ~/alaio/ala
 ./scripts/alaio_build.sh [-P]
 ```
 
@@ -40,6 +40,6 @@ cd ~/alaio/eos
 ALAIO dependencies can also be built and installed manually by reproducing the same commands invoked by the [Build Script](../01_shell-scripts/02_build-alaio-binaries.md). The actual commands can be generated from the script directly by exporting specific environment variables and CLI parameters to the script when invoked:
 
 ```sh
-cd ~/alaio/eos
+cd ~/alaio/ala
 export VERBOSE=true && export DRYRUN=true && ./scripts/alaio_build.sh -y [-P]
 ```

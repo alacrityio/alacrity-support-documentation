@@ -7,9 +7,9 @@ Optionally, a set of tests can be run against your build to perform some basic v
 To run the test suite after building, run:
 
 ```sh
-cd ~/alaio/eos/build
+cd ~/alaio/ala/build
 make test
 ```
 
 > What's Next?]]
-| Configure and use [Nodeos](../../../01_nodeos/index.md).
+| Configure and use [Nodala](../../../01_nodala/index.md).

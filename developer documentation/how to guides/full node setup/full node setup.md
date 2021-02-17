@@ -6,7 +6,7 @@ There are various ways to install and use the ALAIO software:
 * [Build ALAIO from Source](01_build-from-source/index.md)
 
 
-> If you are new to ALAIO, it is recommended that you install the [ALAIO Prebuilt Binaries](00_install-prebuilt-binaries.md), then proceed to the [Getting Started](https://developers.eos.io/alaio-home/docs/) section of the [ALAIO Developer Portal](https://developers.eos.io/). If you are an advanced developer, a block producer, or no binaries are available for your platform, you may need to [Build ALAIO from source](01_build-from-source/index.md) instead.
+> If you are new to ALAIO, it is recommended that you install the [ALAIO Prebuilt Binaries](00_install-prebuilt-binaries.md), then proceed to the [Getting Started](https://developers.ala.io/alaio-home/docs/) section of the [ALAIO Developer Portal](https://developers.ala.io/). If you are an advanced developer, a block producer, or no binaries are available for your platform, you may need to [Build ALAIO from source](01_build-from-source/index.md) instead.
 
 ## Supported Operating Systems
 

@@ -13,7 +13,7 @@ The `wallet_plugin` adds access to wallet functionality from a node.
 plugin = alaio::wallet_plugin
 
 # command-line
-nodeos ... --plugin alaio::wallet_plugin
+nodala ... --plugin alaio::wallet_plugin
 ```
 
 ## Options
@@ -35,6 +35,6 @@ plugin = alaio::http_plugin
 [options]
 
 # command-line
-nodeos ... --plugin alaio::wallet_plugin [options]  \
+nodala ... --plugin alaio::wallet_plugin [options]  \
            --plugin alaio::http_plugin [options]
 ```

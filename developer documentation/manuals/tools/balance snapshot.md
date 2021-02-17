@@ -49,7 +49,7 @@ struct base_response {
     std::vector<balance>       balances = {};
     std::optional<alaio::name> more     = {};
 
-    EOSLIB_SERIALIZE(base_response, (balances)(more))
+    ALALIB_SERIALIZE(base_response, (balances)(more))
 };
 
 STRUCT_REFLECT(base_response) {
@@ -284,7 +284,7 @@ $CDT_DIR/bin/alaio-cpp                                                      \
     -Os                                                                     \
     -I $CDT_DIR/include/alaiolib/capi                                       \
     -I $HT_TOOLS_DIR/libraries/alaiolib/wasmql                              \
-    -I $HT_TOOLS_DIR/external/abieos/external/date/include                  \
+    -I $HT_TOOLS_DIR/external/abiala/external/date/include                  \
     -I $CONTRACTS_DIR/contracts/alaio.system/include                        \
     $HT_TOOLS_DIR/libraries/alaiolib/wasmql/alaio/temp_placeholders.cpp     \
     -fquery-server                                                          \
@@ -295,7 +295,7 @@ $CDT_DIR/bin/alaio-cpp                                                      \
 $CDT_DIR/bin/alaio-cpp                                                      \
     -Os                                                                     \
     -I $HT_TOOLS_DIR/libraries/alaiolib/wasmql                              \
-    -I $HT_TOOLS_DIR/external/abieos/external/date/include                  \
+    -I $HT_TOOLS_DIR/external/abiala/external/date/include                  \
     -I $CONTRACTS_DIR/contracts/alaio.system/include                        \
     $HT_TOOLS_DIR/libraries/alaiolib/wasmql/alaio/temp_placeholders.cpp     \
     -fquery-client                                                          \
