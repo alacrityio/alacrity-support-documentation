@@ -11,7 +11,7 @@ in threaded order. The UI requests messages as needed to fill a virtual scroll a
 UI also has pages describing how the demo is constructed and reveals the sources for the
 contract and wasm-ql wasms.
 
-The single container hosts `nodala`, `combo-rocksdb`, `nginx`, a background transaction
+The single container hosts `alanode`, `combo-rocksdb`, `nginx`, a background transaction
 pusher, and the UI.
 
 To start the demo, run the following, then point your browser to http://127.0.0.1:8881

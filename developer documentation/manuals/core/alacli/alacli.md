@@ -2,7 +2,7 @@
 
 ## Introduction
 
-`alacli` is a command line tool that interfaces with the REST API exposed by `nodala`. Developers can also use `alacli` to deploy and test ALAIO smart contracts.
+`alacli` is a command line tool that interfaces with the REST API exposed by `alanode`. Developers can also use `alacli` to deploy and test ALAIO smart contracts.
 
 ## Installation
 
@@ -10,7 +10,7 @@
 
 ## Using Alacli
 
-To use `alacli`, you need the end point (IP address and port number) of a running `nodala` instance. Also, the `nodala` instance must be configured to load the alaio::chain_api_plugin when launched. This allows `nodala` to respond to the RPC requests coming from `alacli`.
+To use `alacli`, you need the end point (IP address and port number) of a running `alanode` instance. Also, the `alanode` instance must be configured to load the alaio::chain_api_plugin when launched. This allows `alanode` to respond to the RPC requests coming from `alacli`.
 
 ### **Alacli Commands**
 
@@ -27,7 +27,7 @@ Usage: alacli [OPTIONS] SUBCOMMAND
 Options:
   -h,--help                   Print this help message and exit
   -u,--url TEXT=http://127.0.0.1:8888/
-                              the http/https URL where nodala is running
+                              the http/https URL where alanode is running
   --wallet-url TEXT=unix:///Users/username/alaio-wallet/kalad.sock
                               the http/https URL where kalad is running
   -r,--header                 pass specific HTTP header; repeat this option to pass multiple headers

@@ -58,7 +58,7 @@ After installing the prebuilt packages, the actual ALAIO binaries will be locate
 
 where `version-string` is the ALAIO version that was installed.
 
-Also, soft links for each ALAIO program (`nodala`, `clala`, `kalad`, etc.) will be created under `usr/bin` or `usr/local/bin` to allow them to be executed from any directory.
+Also, soft links for each ALAIO program (`alanode`, `clala`, `kalad`, etc.) will be created under `usr/bin` or `usr/local/bin` to allow them to be executed from any directory.
 
 ## Previous Versions
 

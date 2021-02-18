@@ -21,4 +21,4 @@ sudo make install
 ```
 
 > What's Next?]]
-| Configure and use [Nodala](../../../01_nodala/index.md), or optionally [Test the ALAIO binaries](04_test-alaio-binaries.md).
+| Configure and use [Nodala](../../../01_alanode/index.md), or optionally [Test the ALAIO binaries](04_test-alaio-binaries.md).

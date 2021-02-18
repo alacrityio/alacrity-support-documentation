@@ -1,4 +1,4 @@
-As stated in the [introduction](index.md), `alaiojs` integrates with ALAIO-based blockchains using the [ALAIO Nodala RPC API](https://developers.ala.io/alaio-nodala/reference).
+As stated in the [introduction](index.md), `alaiojs` integrates with ALAIO-based blockchains using the [ALAIO Nodala RPC API](https://developers.ala.io/alaio-alanode/reference).
 
 In general, there are two objects that are used to interact with a blockchain via `alaiojs`: the `JsonRpc` object, and the `Api` object.
 

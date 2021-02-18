@@ -2,7 +2,7 @@
 # alaiojs
 ---
 
-`alaiojs` is a Javascript library which provides an API for integrating with ALAIO-based blockchains using the [ALAIO Nodala RPC API](https://developers.ala.io/alaio-nodala/reference).  The documentation for `alaiojs` is structured in the following way:
+`alaiojs` is a Javascript library which provides an API for integrating with ALAIO-based blockchains using the [ALAIO Nodala RPC API](https://developers.ala.io/alaio-alanode/reference).  The documentation for `alaiojs` is structured in the following way:
 
 * [Installation](02_installation.md) explains how to install `alaiojs` using `npm` or `yarn`.
 * [Basic Usage](basic-usage/) provides information related to importing `alaiojs` in various Javascript environments.  The [basic-usage](basic-usage/index.md) document specifically provides brief explanations of the components provided by `alaiojs` as well as their typical use cases.

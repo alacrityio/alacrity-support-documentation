@@ -2,7 +2,7 @@
 
 * Installing alaio.cdt
 * Using Kalad as local development wallet
-* stating the nodala daemon
+* stating the alanode daemon
 * Creating accounts
 * ALAIO Smart contract fundamentals
 * Tokens

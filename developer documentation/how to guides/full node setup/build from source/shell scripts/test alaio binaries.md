@@ -12,4 +12,4 @@ make test
 ```
 
 > What's Next?]]
-| Configure and use [Nodala](../../../01_nodala/index.md).
+| Configure and use [Nodala](../../../01_alanode/index.md).

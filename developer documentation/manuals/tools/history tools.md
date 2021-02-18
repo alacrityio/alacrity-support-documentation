@@ -1,6 +1,6 @@
 # ALAIO History Tools ![ALAIO Alpha](https://img.shields.io/badge/ALAIO-Alpha-blue.svg)
 
-The ALAIO History Tools is a legacy, proof-of-concept (PoC) application that demonstrates scalable and efficient access to finalized blockchain data via the nodala state-history plugin.
+The ALAIO History Tools is a legacy, proof-of-concept (PoC) application that demonstrates scalable and efficient access to finalized blockchain data via the alanode state-history plugin.
 
 > Disclaimer]]
 | History Tools was originally devised as a PoC to request community feedback. Therefore, some of its components have been or will be integrated with future versions of the ALAIO software.
@@ -12,7 +12,7 @@ The following History Tools components have been migrated to the following ALAIO
   * service daemon: https://github.com/ALAIO/ala
 * `wasm-ql`:
   * rodala support: https://github.com/ALAIO/ala
-  * nodala support: https://github.com/ALAIO/ala
+  * alanode support: https://github.com/ALAIO/ala
   * cdt support: https://github.com/ALAIO/alaio.cdt
 * `abi-wasm`:
   * cdt support: https://github.com/ALAIO/alaio.cdt
@@ -22,7 +22,7 @@ The following History Tools components have been migrated to the following ALAIO
 
 History Tools consists of the following components:
 
-* **database fillers** -  connect to the nodala state-history plugin and populate databases
+* **database fillers** -  connect to the alanode state-history plugin and populate databases
 * **wasm-ql servers** - answer incoming queries by running server WASMs, which have read-only access to the databases
 * **wasm-ql library** - when combined with the CDT library, provides utilities that server WASMs and client WASMs need
 * **examples** of server WASMs and client WASMs
@@ -41,7 +41,7 @@ Note: by default, `history-tools` does nothing; use the `--plugin` option to sel
 ## Alpha Release
 
 This is an alpha release of the ALAIO History Tools. It includes database fillers
-(`fill-pg`, `fill-rocksdb`) which pull data from nodala's State History Plugin, and a new
+(`fill-pg`, `fill-rocksdb`) which pull data from alanode's State History Plugin, and a new
 query engine (`wasm-ql-pg`, `wasm-ql-rocksdb`) which supports queries defined by wasm, along
 with an emulation of the legacy `/v1/` RPC API.
 
@@ -52,7 +52,7 @@ useful. Please create issues about changes you'd like to see going forward.
 Since this is an alpha release, it will likely have incompatible changes in the
 future. Some of these may be driven by community feedback.
 
-This release supports nodala 1.8.x. It does not support 1.7.x or the 1.8 RC versions. This release
+This release supports alanode 1.8.x. It does not support 1.7.x or the 1.8 RC versions. This release
 includes the following:
 
 ### Alpha 0.3.0
@@ -85,7 +85,7 @@ like to test rocksdb support or wasm-ql support, stick with Nodala 1.8 and the A
 
 ### fill-pg
 
-`fill-pg` fills postgresql with data from nodala's State History Plugin. It provides nearly all
+`fill-pg` fills postgresql with data from alanode's State History Plugin. It provides nearly all
 data that applications which monitor the chain need. It provides the following:
 
 * Header information from each block
@@ -109,7 +109,7 @@ don't need the blocks since:
   applications need to handle these, so should examine the traces instead. e.g. many transfers
   live in the inline actions and deferred transactions that blocks exclude.
 * Most apps don't verify block signatures. If they do, then they should connect directly to
-  nodala's State History Plugin to get the necessary data. Note that contrary to
+  alanode's State History Plugin to get the necessary data. Note that contrary to
   popular belief, the data returned by the `/v1/get_block` RPC API is insufficient for
   signature verification since it uses a lossy JSON conversion.
 * Most apps which currently use the `/v1/get_block` RPC API (e.g. `alaiojs`) only need a tiny

@@ -1,8 +1,8 @@
 ---
-# nodala State History
+# Alanode State History
 ---
 
-## nodala Configuration
+## Alanode Configuration
 
 | Option                                    | When to use |
 |-------------------------------------------|-------------|
@@ -21,7 +21,7 @@ This option creates a database which tracks the chain state, but lacks most hist
   * A portable snapshot (`data/snapshots/snapshot-xxxxxxx.bin`)
   * Optional: a block log which includes the block the snapshot was taken at
 * Make sure `data/state` does not exist
-* Start nodala with the `--snapshot` option, and the options listed in "Nodala configuration" above
+* Start alanode with the `--snapshot` option, and the options listed in "Nodala configuration" above
 * Start a filler with `--fpg-create` (if PostgreSQL) and `--fill-trim`.
 
 Whenever you run a filler after this point, use the `--fill-trim` option. Only use `--fpg-create` the first time.
@@ -30,8 +30,8 @@ Whenever you run a filler after this point, use the `--fill-trim` option. Only u
 
 * Enable the `producer_api_plugin` on a node with full state-history. Caution when using producer_api_plugin: either use a firewall to block access to `http-server-address`, or change it to `127.0.0.1:8888` to disable remote access.
 * Create a portable snapshot: `curl http://127.0.0.1:8888/v1/producer/create_snapshot | json_pp`
-* Wait for nodala to process several blocks after the snapshot completed. The goal is for the state-history files to contain at least 1 more block than the portable snapshot has, and for the block log to contain the block after it has become irreversible.
-* Stop nodala
+* Wait for alanode to process several blocks after the snapshot completed. The goal is for the state-history files to contain at least 1 more block than the portable snapshot has, and for the block log to contain the block after it has become irreversible.
+* Stop alanode
 * Make backups of:
   * The newly-created portable snapshot (`data/snapshots/snapshot-xxxxxxx.bin`)
   * The contents of `data/state-history`:
@@ -48,6 +48,6 @@ Whenever you run a filler after this point, use the `--fill-trim` option. Only u
   * The contents of `data/state-history`
   * Optional: a block log which includes the block the snapshot was taken at. Do not include `data/blocks/reversible`.
 * Make sure `data/state` does not exist
-* Start nodala with the `--snapshot` option, and the options listed in "Nodala configuration" above
+* Start alanode with the `--snapshot` option, and the options listed in "Nodala configuration" above
 
-If nodala fails to receive blocks from the network, then try the above using `net_api_plugin`. Use `alacli net disconnect` and `alacli net connect` to reconnect nodes which timed out. Caution when using net_api_plugin: either use a firewall to block access to `http-server-address`, or change it to `127.0.0.1:8888` to disable remote access.
+If alanode fails to receive blocks from the network, then try the above using `net_api_plugin`. Use `alacli net disconnect` and `alacli net connect` to reconnect nodes which timed out. Caution when using net_api_plugin: either use a firewall to block access to `http-server-address`, or change it to `127.0.0.1:8888` to disable remote access.
