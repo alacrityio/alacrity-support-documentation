@@ -1,8 +1,8 @@
 # ALAIO.system
 
-The alaio.system smart contract is provided by Alacrity as a sample system contract, and it defines the structures and actions needed for blockchain's core functionality.
+Alacrity provides the alaio.system smart contract as a sample system contract, this defines the structures and actions required for blockchain's core functinonality.
 
-Just like in the alaio.bios sample contract implementation, there are a few actions which are not implemented at the contract level (newaccount, updateauth, deleteauth, linkauth, unlinkauth, canceldelay, onerror, setabi, setcode), they are just declared in the contract so they will show in the contract's ABI and users will be able to push those actions to the chain via the account holding the alaio.system contract, but the implementation is at the ALAIO core level. They are referred to as ALAIO native actions.
+Similar to the alaio.bios sample contract implementation, a few actions are not implemented at the contract level (newaccount, updateauth, deletauth, linkauth, unlinkauth, canceldelay, onerror, setabi, setcode), they are simply proclaimed in the contract so they will show in the contract's ABI and users will be able to push those actions the the chain by the account holding the alaio.system contract, but the implementation is at the ALAIO core level. ALAIO native actions is what they are referred to as. 
 
 * Users can stake tokens for CPU and Network bandwidth, and then vote for producers or delegate their vote to a proxy.
 * Producers register in order to be voted for, and can claim per-block and per-vote rewards.
@@ -14,13 +14,13 @@ Just like in the alaio.bios sample contract implementation, there are a few acti
 
 **Type:** `class`
 
-The ALAIO system contract. The ALAIO system contract governs ram market, voters, producers, global state.
+The ALAIO system contract. It governs ram market, voters, producers, and global state.
 
 ## init
 
 **Type:** `void`
 
-The Init action initializes the system contract for a version and a symbol. Only succeeds when:
+The Init actions boots the system contract for a version and a symbol. It is only approved when:
 
 * version is 0 and
 * symbol is found and
@@ -36,7 +36,7 @@ core | - the system symbol.
 
 **Type:** void
 
-On block action. This special action is triggered when a block is applied by the given producer and cannot be generated from any other source. It is used to pay producers and calculate missed blocks of other producers. Producer pay is deposited into the producer's stake balance and can be withdrawn over time. If blocknum is the start of a new round this may update the active producer config from the producer votes.
+On block action is a special action that is triggered when a block is applied by the given producer and can't be generated from any other source. It's used to pay producers and calculate missed blocks of other producers. Their pay is deposited into the producer's stake balance and over time can be withdrawn. If Blocknum is the start of a new round, this may update the active producer config from the producer votes.
 
 Parameter Name | Description
 --- | ---
@@ -126,7 +126,7 @@ balance | - amount to set the REX pool balance.
 
 **Type:** void
 
-Deposit to REX fund action. Deposits core tokens to user REX fund. All proceeds and expenses related to REX are added to or taken out of this fund. An inline transfer from 'owner' liquid balance is executed. All REX-related costs and proceeds are deducted from and added to 'owner' REX fund, with one exception being buying REX using staked tokens. Storage change is billed to 'owner'.
+Deposit to REX fund action. Deposits core tokens to user REX fund. Any proceeds and expenses in relation to REX are added to or Taken from this fund. An inline transfer from 'owner' liquid balance is initiated. All REX-related expenses and proceeds are deducted from and added to 'owner' REX fund, with one exception being buying REX using staked tokens. Storage change is billed to 'owner'.
 
 Parameter Name | Description
 --- | ---
@@ -148,7 +148,7 @@ amount | - amount of tokens to be withdrawn.
 
 **Type:** void
 
-Buyrex action, buys REX in exchange for tokens taken out of user's REX fund by transfering core tokens from user REX fund and converts them to REX stake. By buying REX, user is lending tokens in order to be rented as CPU or NET resourses. Storage change is billed to 'from' account.
+Buyrex is an action that buys REX in exchange for tokens taken out of user's REX fund by transferring core tokens from user REX fund and converts them to REX stake. By purchasing REX, the user is lending tokens in order to be loaned as CPU or NET resources. Storage change is charged to 'from' account. 
 
 Parameter Name | Description
 --- | ---
@@ -172,7 +172,7 @@ from_cpu | - amount of tokens to be unstaked from CPU bandwidth and used for REX
 
 **Type:** void
 
-Sellrex action, sells REX in exchange for core tokens by converting REX stake back into core tokens at current exchange rate. If order cannot be processed, it gets queued until there is enough in REX pool to fill order, and will be processed within 30 days at most. If successful, user votes are updated, that is, proceeds are deducted from user's voting power. In case sell order is queued, storage change is billed to 'from' account.
+Sellrex action, sells REX in exchange for core tokens by converting REX stake back into core tokens at current exchance rate. If the order is unable to be processed, it's queued until there is enough in the REX pool to complete an order, and will be processed for a maximum of 30 days. If it is successful, user votes are updated, that, proceeds are deducted from user's voting power. In case a sell order is queued, storage change is billed to 'from' account. 
 
 Parameter Name | Description
 --- | ---
@@ -192,7 +192,7 @@ rentcpu
 
 **Type:** void
 
-Rentcpu action, uses payment to rent as many SYS tokens as possible as determined by market price and stake them for CPU for the benefit of receiver, after 30 days the rented core delegation of CPU will expire. At expiration, if balance is greater than or equal to loan_payment, loan_payment is taken out of loan balance and used to renew the loan. Otherwise, the loan is closed and user is refunded any remaining balance. Owner can fund or refund a loan at any time before its expiration. All loan expenses and refunds come out of or are added to owner's REX fund.
+Rentcpu is an action that uses payment to rent as many SYS tokens as possible as determind by market price and then stake them for CPU for the benefit of receiver, after 30 days the rented core delegation of CPU will expire. At expiration, if balance is greater than or equal to loan_payment is taken out of loan balance and used for renewing the loan. Or else, the loan is concluded and the user is refunded any balance remaining. The owner can fund or refund a loan any time before it expires. All loan expenses and refunds come out of or are added to the owners REX fund.
 
 Parameter Name | Description
 --- | ---
@@ -205,7 +205,7 @@ loan_fund | - additional tokens can be zero, and is added to loan balance. Loan 
 
 **Type:** void
 
-Rentnet action, uses payment to rent as many SYS tokens as possible as determined by market price and stake them for NET for the benefit of receiver, after 30 days the rented core delegation of NET will expire. At expiration, if balance is greater than or equal to loan_payment, loan_payment is taken out of loan balance and used to renew the loan. Otherwise, the loan is closed and user is refunded any remaining balance. Owner can fund or refund a loan at any time before its expiration. All loan expenses and refunds come out of or are added to owner's REX fund.
+Rentnet is an action that uses payment to rent as many SYS tokens as possible as determind by market price and stakes them for NET for the benefit of reciever, after 30 days the rented core delegation of NET will expire. At expiration, if the balance is greater than or equal to loan_payment, loan_payment is taken out of loan balance and used to renew the loan. Otherwise, the loan is canceled and the user is refunded any remaining balance. Owner can fund or refund a loan at any time before it expires. All loan expenses and refundes come out of or are added to owner's REX fund.
 
 Parameter Name | Description
 --- | ---
@@ -276,7 +276,7 @@ owner | - REX owner account.
 
 **Type:** void
 
-Rexexec action, processes max CPU loans, max NET loans, and max queued sellrex orders. Action does not execute anything related to a specific user.
+Rexexec is an action that processes max CPU loans, max NET loans, and max queued sellrex orders as well. The action does not execute anything related to a specific user.
 
 Parameter Name | Description
 --- | ---
@@ -287,7 +287,7 @@ max | - number of each of CPU loans, NET loans, and sell orders to be processed.
 
 **Type:** void
 
-Consolidate action, consolidates REX maturity buckets into one bucket that can be sold after 4 days starting from the end of the day.
+Consolidate is an action that combine REX maturity buckets into one bucket that can be sold after four days starting from the end of the day.
 
 Parameter Name | Description
 --- | ---
@@ -297,7 +297,7 @@ owner | - REX owner account name.
 
 **Type:** void
 
-Mvtosavings action, moves a specified amount of REX into savings bucket. REX savings bucket never matures. In order for it to be sold, it has to be moved explicitly out of that bucket. Then the moved amount will have the regular maturity period of 4 days starting from the end of the day.
+Mvtosavings is an action that moves a specic amount of REX into the savings bucket. REX savings bucket never matures. In order for it to be sold, it has to be moved decidely out of that bucket. Then the moved amount will have the regular maturity period of four days starting from the end of the day.
 
 Parameter Name | Description
 --- | ---
@@ -308,7 +308,7 @@ rex | - amount of REX to be moved.
 
 **Type:** void
 
-Mvfrsavings action, moves a specified amount of REX out of savings bucket. The moved amount will have the regular REX maturity period of 4 days.
+Mvfrsavings is an action that moves a specific amount of REX out of savings bucket. The amount moved will have the regular REX maturity period of four days.
 
 Parameter Name | Description
 --- | ---
@@ -319,7 +319,7 @@ rex | - amount of REX to be moved.
 
 **Type:** void
 
-Closerex action, deletes owner records from REX tables and frees used RAM. Owner must not have an outstanding REX balance.
+Closerex is an action that removes owner records from REX tables and frees up used RAM. The owner is required to not have an outstanding REX balance.
 
 owner REX balance entry is deleted. REX fund entry is deleted.
 
@@ -370,7 +370,7 @@ bytes | - the quntity of ram to buy specified in bytes.
 
 **Type:** void
 
-Sell ram action, reduces quota by bytes and then performs an inline transfer of tokens to receiver based upon the average purchase price of the original quota.
+Sell ram is an action that reduces quota by bytes and then performs an inline transfer of tokens to reciever based up the average purchase price of the original quota.
 
 Parameter Name | Description
 --- | ---
@@ -381,7 +381,7 @@ bytes | - the amount of ram to sell in bytes.
 
 **Type:** void
 
-Refund action, this action is called after the delegation-period to claim all pending unstaked tokens belonging to owner.
+Refund is an action that is called after the delegation-period to claim all pending unstaked tokens that belong to the owner.
 
 Parameter Name | Description
 --- | ---
@@ -391,7 +391,7 @@ owner | - the owner of the tokens claimed.
 
 **Type:** void
 
-Register producer action, indicates that a particular account wishes to become a producer, this action will create a producer_config and a producer_info object for producer scope in producers tables.
+Register producer is an action that indicates a particular account that wishes to become a producer, this action will generate a producer_config and a producer_info object for producer scope in producers tables.
 
 Parameter Name | Description
 --- | ---
@@ -439,7 +439,7 @@ max_ram_size | - the amount of ram supply to set.
 
 **Type:** void
 
-Set ram rate action, sets the rate of increase of RAM in bytes per block. It is capped by the uint16_t to a maximum rate of 3 TB per year. If update_ram_supply hasn't been called for the most recent block, then new ram will be allocated at the old rate up to the present block before switching the rate.
+Set ram rate is an action that sets the rate of increase of RAM in bytes per block. It's capped by the uint16_t to a maximum rate of 3 TB per year. If update_ram_supply has not been called for the most recent block, then new ram will be assigned at the old rate up to the present block before switching the rate
 
 Parameter Name | Description
 --- | ---
@@ -449,7 +449,7 @@ bytes_per_block | - the amount of bytes per block increase to set.
 
 **Type:** void
 
-Vote producer action, votes for a set of producers. This action updates the list of producers voted for, for voter account. If voting for a proxy, the producer votes will not change until the proxy updates their own vote. Voter can vote for a proxy or a list of at most 30 producers. Storage change is billed to voter.
+Vote producer is an action that votes for a set of producers. This action updates the list of producers voted for which is for voter account. If voting for a proxy, the producer votes will not change until the proxy updates their own vote. the voter can vote for a proxy or a list of at more thirty producers. Storage change is charged to the voter.
 
 Parameter Name | Description
 --- | ---
@@ -461,7 +461,7 @@ producers | - the list of producers to vote for, a maximum of 30 producers is al
 
 **Type:** void
 
-Register proxy action, sets proxy account as proxy. An account marked as a proxy can vote with the weight of other accounts which have selected it as a proxy. Other accounts must refresh their voteproducer to update the proxy's weight. Storage change is billed to proxy.
+Register proxy is an action that sets 'proxy account' as proxy. An account marked as proxy can vote with the weight of other accounts which have selected it as a proxy. Other accounts are required to refresh their voteproducter to update the proxy's weight. Storage change is billed to proxy.
 
 Parameter Name | Description
 --- | ---
@@ -472,7 +472,7 @@ isproxy | - if true, proxy is registered; if false, proxy is unregistered.
 
 **Type:** void
 
-Set the blockchain parameters. By tunning these parameters a degree of customization can be achieved.
+Set the blockchain parameters. with adjuting these parameters a degree of customization can be achieved.
 
 Parameter Name | Description
 --- | ---
@@ -482,7 +482,7 @@ params | - New blockchain parameters to set.
 
 **Type:** void
 
-Claim rewards action, claims block producing and vote rewards.
+Claim rewards is an action that claims block producing and vote rewards.
 
 Parameter Name | Description
 --- | ---
@@ -492,7 +492,7 @@ owner | - producer account claiming per-block and per-vote rewards.
 
 **Type:** void
 
-Set privilege status for an account. Allows to set privilege status for an account (turn it on/off).
+Allows to set privilige status for an account (turn on/off).
 
 Parameter Name | Description
 --- | ---
@@ -503,7 +503,7 @@ is_priv | - 0 for false, > 0 for true.
 
 **Type:** void
 
-Remove producer action, deactivates a producer by name, if not found asserts.
+Remove producer is an action that deactivates a producer by name if not found asserts.
 
 Parameter Name | Description
 --- | ---
@@ -523,7 +523,7 @@ revision | - it has to be incremented by 1 compared with current revision.
 
 **Type:** void
 
-Bid name action, allows an account bidder to place a bid for a name newname.
+Bid name is an action that allows an account bidder to place a big for a name newname.
 
 Parameter Name | Description
 --- | ---
@@ -535,7 +535,7 @@ bid | - the amount of system tokens payed for the bid.
 
 **Type:** void
 
-Bid refund action, allows the account bidder to get back the amount it bid so far on a newname name.
+Bid refund is an action that allows the account bidder to refund the amount it bid so far on a newname name.
 
 Parameter Name | Description
 --- | ---
@@ -546,7 +546,7 @@ newname | - the name for which the bid was placed and now it gets refunded for.
 
 **Type:** void
 
-Change the annual inflation rate of the core token supply and specify how the new issued tokens will be distributed based on the following structure.
+Changes the annual inflation rate of the core token supply and clarify how the new issues of tokens will be disbursed based on the following structure.
 
 Parameter Name | Description
 --- | ---
