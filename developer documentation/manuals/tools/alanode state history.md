@@ -11,11 +11,11 @@
 | `--trace-history`                         | enable to collect transaction and action traces. *required for wasm-ql*  |
 | `--chain-state-history`                   | enable to collect state (tables). *required for wasm-ql* |
 
-Caution: either use a firewall to block access to the state-history endpoint, or leave it as `127.0.0.1:8080` to disable remote access.
+Caution: leave it as `127.0.0.1:8080` to disable remote access or either use a firewall to block access to the state-history endpoint.
 
 ## Fast start without history on existing chains
 
-This option creates a database which tracks the chain state, but lacks most historical information.
+This choice creates a database which tracks the chain state, although it lacks most historical information.
 
 * Get the following:
   * A portable snapshot (`data/snapshots/snapshot-xxxxxxx.bin`)
@@ -50,4 +50,4 @@ Whenever you run a filler after this point, use the `--fill-trim` option. Only u
 * Make sure `data/state` does not exist
 * Start alanode with the `--snapshot` option, and the options listed in "Nodala configuration" above
 
-If alanode fails to receive blocks from the network, then try the above using `net_api_plugin`. Use `alacli net disconnect` and `alacli net connect` to reconnect nodes which timed out. Caution when using net_api_plugin: either use a firewall to block access to `http-server-address`, or change it to `127.0.0.1:8888` to disable remote access.
+On the chance alanode is unable to recieve blocks from the network, try the above using `net_api_plugin`. Use `alacli net disconnect` and `alacli net connect`. That will reconnect nodes which have timed out. Caution when using net_api_plugin: either use a firewall to block access to `http-server-address`, or change it to `127.0.0.1:8888` to disable remote access.
