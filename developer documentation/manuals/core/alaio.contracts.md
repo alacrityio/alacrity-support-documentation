@@ -1,6 +1,6 @@
 # About System Contracts
 
-The ALAIO blockchain platform is unique in that the features and characteristics of the blockchain built on it are flexible, that is, they can be changed, or modified completely to suit each business case requirement. Core blockchain features such as consensus, fee schedules, account creation and modification, token economics, block producer registration, voting, multi-sig, etc., are implemented inside smart contracts which are deployed on the blockchain built on the ALAIO platform.
+Unique in that the features and characteristics of the blockchain built on it are flexible, the ALAIO blockchain platform can be changed, or altered completely to suit each business case requirment. Core blockchain features such as consensus, fee schedules, account creation and modification, token economics, block producer, registration, voting, multi-sig, etc., are enabld inside smart contracts which are put on the blockchain built on the ALAIO platform.
 
 ## System contracts defined in alaio.contracts
 
