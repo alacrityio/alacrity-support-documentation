@@ -2,15 +2,15 @@
 
 ## Introduction
 
-`alacli` is a command line tool that interfaces with the REST API exposed by `alanode`. Developers can also use `alacli` to deploy and test ALAIO smart contracts.
+Developers can us `alacli` to deploy and test ALAIO smart contract. It is a command line tool that interfaces with the REST API exposed by `alanode`.
 
 ## Installation
 
-`alacli` is distributed as part of the [ALAIO software suite](). To install `alacli` just visit the [ALAIO Software Installation]() section.
+To install `alacli` just visit the [ALAIO Software Installation]() section. `alacli` is distributed as part of the [ALAIO software suite](). 
 
 ## Using Alacli
 
-To use `alacli`, you need the end point (IP address and port number) of a running `alanode` instance. Also, the `alanode` instance must be configured to load the alaio::chain_api_plugin when launched. This allows `alanode` to respond to the RPC requests coming from `alacli`.
+The user needs the end point (IP address and port number) of a running `alanode` instance in order to use `alacli`. The `alanode` instance must be configured to load the alaio::chain_api_plugin when launched. This allows `alanode` to respond to the RPC requests coming from `alacli`.
 
 ### **Alacli Commands**
 
