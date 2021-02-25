@@ -14,38 +14,38 @@ ALA VM is designed from the ground up for the high demands of blockchain applica
 
 While ALA VM was designed for blockchain, we believe it is ideally suited for any application looking to embed a High Performance WebAssembly engine.
 
-We designed ALA VM to meet the needs of ALAIO blockchains after using three of the most common WebAssembly engines: Binaryen, WABT, and WAVM. These WebAssembly engines were the single largest source of security issues impacting ALAIO blockchains. While WAVM provides extremely fast execution, it is not suited to running a live blockchain because it has extremely long and unpredictable compilation times and the need to recompile all contracts every time the process restarts.  WABT was designed as a toolkit for manipulating WebAssembly first and as an execution engine second.
+We designed ALA VM to meet the needs of ALAIO blockchains after using three of the most commonly used WebAssembly engines: WAVM, WABT, and Binaryen. These WebAssembly engines were the single largest source of security issues impacting ALAIO blockchains. While WAVM provides extremely fast execution, it is not suited to running a live blockchain because it has extremely long and unpredictable compilation times and the need to recompile all contracts every time the process restarts. WABT was designed as a toolkit for manipulating WebAssembly first and as an execution engine second. 
 
-We considered the WebAssembly engines used by the largest browsers, but they all come with considerable overhead and assumptions which are inappropriate for a reusable library or to be embedded in a blockchain. It is our hope that one day major browsers will opt to switch to ALA VM. 
+We considered the WebAssembly engines used by the largest browsers, but they all come with considerable overhead and assumptions which are inappropriate for a reusable library or to be embedded in a blockchain. It is out hope that one day major browsers will opt to switch to ALA VM.
  
-All of the existing libraries incorporate a large code base designed and implemented by engineers not trained in the rigor of blockchain development. This makes the code difficult to audit and keeping up with upstream changes / security breaches difficult. 
+All of the current libraries enable a large code base designed and incorporate by engineers not trained in the dificulty of blockchain development. This makes the code hard to audit and keeping up with upstream changes/ security breaches difficult. 
 
-With WebAssembly (Wasm) becoming ever more ubiquitous, there is a greater need for a succinct implementation of a Wasm backend.  We implemented __ALA VM__ because all existing backends we evaluated fell short in meeting our needs for a Wasm backend best suited for use in a public blockchain environment. 
+Since WebAssembly is becoming more ubiquitous than ever, there is an ever pressing need for a succinct implementation of wasm backend. We implemented __ALA VM__ because all existing backends we evaluated fell short in meeting our requirments for Wasm backend best suited for use in a public blockchain environment.
 
 ## Deterministic Execution
-Given that all programs on the blockchain must be deterministic, floating point operations are of particular interest to us.  Because of the non-deterministic nature of rounding modes, NaNs and denormals, special care has to be made to ensure a deterministic environment on all supported platforms.  This comes in the form of "softfloat", a software implementation of IEEE-754 float point arithmetic, which is constrained further to ensure determinism.  If this determinism is not required, hardware based floating point operations are still available through a compile time define.
+Since all programs on the blockchain are to be deterministic, floating point operations are very interesting to us. The non-deterministic nature of rounding modes, NaNs and denormals, special care has to be made to ensure a deterministic environment on all supported platforms. This comes in the form of "softfloat", a software implementation of IEEE-754 float point arithmetic, which is constrained further to ensure determinism. If this determinism is not necessary, hardware based floating point operations are still available through a compile time define.
 
-Any secondary limits/constraints (i.e. stack size, call depth, etc.) can cause consensus failures if these restrictions do not match any previous backend that was in place, __ALA VM__ has all of these constraints user definable through either a compile-time system or run-time based on the use case and data type involved.
+Any second tier limits/constraints (i.e. stack size, call depth, etc.) are able to cause consensus failures if these restrictions do not match any previous backend that was in place, __ALA VM__ has all of these constraints use definable through either a compile-time system or run-time based on the use case and data type involved.
 
 ## Time Bounded Execution
-The ability to ensure that execution doesn't over run the CPU time that is allotted for a given program is a central component of a resource limited blockchain.  This is satisfied by the watchdog timer system (as mentioned below, this mechanism is also useful for general security). ALA VM's implementation is both fast and efficient compared to prior solutions. 
+To ensure that execution doesn't over run the CPU time that is allotted for a given program is a central component of a resource limited blockchain. This is satiated by the watchdog timer system (as mentioned below, this mechanism is also useful for general security). ALA VM's implementation is both quick and efficient compared to prior solutions.
 
 Two mechanisms are available to the user to bound the execution of Wasm:
   1) A simple instruction counter based bounding, this incurs a performance penalty, but doesn't require multi-threading.
   2) A watchdog timer solution that incurs no noticeable overhead during Wasm execution.
 
 ## Secure by Design
-WebAssembly was designed to run untrusted code in a browser environment where the worst that can happen is a hung browser. Existing libraries such as WABT, WAVM, and Binaryen were designed with assumptions which can lead to unbounded memory allocation, extremely long load times, and stack overflows from recursive descent parsing or execution.  
+WebAssembly was created to run untrusted code in a browser environment where the worst case scenario is a hung browser. Current libraries such as WABT, WAVM, and Binaryen were make with assumptions which can lead to unbounded memory allocation, extremely long load times, and stack overflows from recursive descent parsing or execution.  
 
 The fundamental data types that make up __ALA VM__ are built with certain invariants from the onset.  This means that explicit checks and validations, which can be error-prone because of programmer forgetfulness, are not needed as the data types themselves maintain these invariants and kill the execution if violated.  
 
-In addition to these core data types, some of the special purpose allocators utilize the security of the CPU and core OS to satisfy that memory is properly sandboxed (a guard paging mechanism).  
+In addition to these core data types, some of the special purpose allocators utilize the security of the CPU and core OS to satisfy that memory is properly sandboxed (a guard paging mechanism).
 
 Because of the utilization of guard paging for the memory operations, host function calls that execute natively don't have to explicitly validate pointers that are passed into these functions if access outside of the sandboxed memory occurs, please note special care should be made to ensure that the host function can fail hard, i.e. not call destructors and have no negative impact.
 
-At no point during parsing or evaluation does ALA-VM use unbounded recursion or loops, everything is tightly bound to limit or eliminate the ability for a bad or corrupt Wasm to cause a crash or infinitely hang the machine.
+During parsing or evaluation, ALA-VM does not use unbounded recursion or loops. Everything is tightly bound to limit or eliminate the ability for a bad or corrupt Wasm to cause a crash or infinitely hang the machine. 
 
-All of these solutions are transparent to the developer and allow for more succinct functions that are not cluttered with external checks and only the core logic is needed in most places.  
+Every one of these solutions are transparent to the developer and allow for more concise functions that are not cluttered with external checks and only the core logic is needed in the majority of places.
 
 ## High-Performance Execution
 Host functions are callable through a thin layer that doesn't incur heavy performance penalties.
