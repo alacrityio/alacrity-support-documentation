@@ -1,7 +1,7 @@
 # ALAIO.CDT (Contract Development Toolkit)
 ## Version : 1.7.0
 
-ALAIO.CDT is a toolchain for WebAssembly (WASM) and set of tools to facilitate smart contract development for the ALAIO platform. In addition to being a general purpose WebAssembly toolchain, [ALAIO]() specific optimizations are available to support building ALAIO smart contracts. This new toolchain is built around [Clang 7](), which means that ALAIO.CDT has the most currently available optimizations and analyses from LLVM, but as the WASM target is still considered experimental, some optimizations are incomplete or not available.
+While ALAIO.CDT is a toolchain for WebAssembly (WASM) and set of tools to facilitate smart contract development for the ALAIO platform, it in addition [ALAIO]() has specific optimizations that are available to support building ALAIO smart contracts. This new toolchain is built around [Clang 7](), which means that ALAIO.CDT has the most currently available optimizations and analyses from LLVM, but as the WASM target is still considered experimental, some optimizations are incomplete or not available.
 
 ## New Introductions
 
