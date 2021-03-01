@@ -1,7 +1,7 @@
 # Transfer
 ## Description
 
-Transfer tokens from account to account
+Transfer tokens from account to different accounts
 ## Positional Parameters
 
 * `sender` TEXT - The account sending ALA
@@ -33,7 +33,7 @@ Transfer 1000 SYS from **inita** to **tester**
 
     alacli transfer inita tester 1000
 
-The response should look something like this:
+The response should look similar to this: 
 
 ```json
 {
