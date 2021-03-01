@@ -2,7 +2,7 @@
 # Database Fillers
 ---
 
-The database fillers connect to the alanode state-history plugin and populate databases.
+The database fillers sync to the alanode state-history plugin and inhabit databases.
 
 ## PostgreSQL vs. RocksDB
 
@@ -23,7 +23,7 @@ When running `fill-pg` for the first time, use the `--fpg-create` option to crea
 
 `fill-rocksdb` and `combo-rocksdb` automatically create a database if it doesn't exist; it doesn't have `drop` or `create` options.
 
-After starting, a filler will populate the database. It will track real-time updates from alanode after it catches up.
+After starting, a filler will populate the database. It will track real time updates from alanode once it has caught up. 
 
 Use SIGINT or SIGTERM to stop.
 
@@ -62,24 +62,19 @@ It ignores whitespace within the pattern.
 | act_account   | Yes           | The account which received the original. This is called `code` or `first_receiver` in the CDT. |
 | act_name      | Yes           | The name of the action |
 
-`--fill-trx` may be specified multiple times. This creates a list of rules. The filter checks an action against each
-rule in order. As soon as it finds a rule which matches the action it stops. The action passes if `include` is `+`. 
-The action doesn't pass if `include` is `-`. If no rules match, then the action doesn't pass.
+`--fill-trx` may be specified multiple times. This creates a list of rules. The filter checks an action against each rule in order. As soon as it finds a rule which matches the action it stops. The action passes if `include` is `+`. The action doesn't pass if `include` is `-`. If no rules match, then the action doesn't pass.
 
-The filler writes a transaction to the database if any of the transaction's actions pass the filter. When this happens, it writes all
-actions in the transaction, including ones that didn't pass.
+The filler generates a transaction to the database if any of the transaction's actions move through the filter, it writes all actions in the transaction, including ones that didn't pass.
 
 ### Transaction filter examples
 
-* Include all transactions. Includes deferred transactions which haven't executed
-  yet or have failed. This is the default if no `--fill-trx` is provided:
+* Include all transactions. Includes deferred transactions which haven't executed yet or have failed. This is the default if no `--fill-trx` is provided:
 
 ```
 --fill-trx "+:        :            :            :"
 ```
 
-* Include all executed transactions. Excludes deferred transactions which haven't executed
-  yet or have failed:
+* Include all executed transactions. Excludes deferred transactions which haven't executed yet or have failed:
 
 ```
 --fill-trx "+:executed:            :            :"
