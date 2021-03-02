@@ -4,16 +4,15 @@
 
 ### 1.1 What is Gaia?
 
-In short, Gaia Hub is a **decentralized data storage system**. For a completely decentralized application, transactional data is stored on the blockchain and user application data and/or media is stored in Gaia storage. Storing data off of the blockchain ensures that your application can provide users with high performance and high availability for data reads and writes without introducing central trust parties.
+Gaia Hub is a **decentralized data storage system**. For a fully decentralized application, transactional data is held on the blockchain and user application data and/or media is stored in Gaia storage. Storing data off of the blockchain guarantees that your application can provide users with high performance and high availability for data reads and writes without introducing central trust parties.
 
 ### 1.2 Understanding the Gaia architecture
 
-> Blockchains require consensus among large numbers of people, so they can be slow. Additionally, a blockchain is not designed to hold a lot of data. This means using a blockchain for every bit of data a user might write and store is expensive. *For example, imagine if an application were storing every tweet in the chain.*
+> Blockchains need a consensus among large numbers of people and due to this they have the possibility of being slow. In addition, a blockchain, in its design is not meant to hold a lot of data. This means using a blockchain for every bit of data a user might write and store is expensive. *For example, imagine if an application were storing every tweet in the chain.* 
 
 A Gaia Storage System consists of a *hub service* and *storage resource* on a cloud software provider. The storage provider can be any commercial provider such as Azure, DigitalOcean, Amazon EC2, and so forth. Typically the compute resource and the storage resource reside same cloud vendor, though this is not a requirement. Gaia currently has driver support for S3 and Azure Blob Storage, but the driver model allows for other backend support as well.
 
-Gaia stores data as a simple key-value store. When an identity is created, a corresponding data store is associated with that identity on Gaia. When a user logs into a dApp, the authentication process gives the application the URL of a Gaia hub, which then writes to storage on behalf of that user.
-
+Gaia stores data as a simple key-value store. When an identity is generated, a communicating data store is associated with that identity on Gaia. When a user logs into a dApp, the authentatication process gives the application the URL of a Gaia hub, which then writes to storage on behalf of that user.
 
 ### 1.3 User control
 
@@ -40,7 +39,7 @@ Because `alice.id` has access to her `zonefile`, she can change where her profil
 
 ### 1.4 Unerstand data storage
 
-A Gaia hub stores the written data exactly as given. It offers minimal guarantees about the data. It does not ensure that data is validly formatted, contains valid signatures, or is encrypted. Rather, the design philosophy is that these concerns are client-side concerns.
+A Gaia hub holds the written data as it was given. It gives minimal guarantees about the data. It does not ensure that data is validly formatted, contains valid signatures, or is encrypted. Rather, the design philosophy is that these concerns are client-side concerns.
 
 ## 2. Storage hubs overview
 
@@ -69,7 +68,7 @@ You should store a JSON configuration file either in the top-level directory of 
         }
     }
 
-You can specify the logging level, the backend driver, the credentials for that backend driver, and the `readURL` of the hub. Typically, this is the URL for the compute resource on the cloud computing provider — where the hub service is running.
+You can define the logging level, the backend driver, the credentials for that backend driver, and the `readURL` of the hub. Typically, this is the URL for the compute resource on the cloud computing provider - where the hub service is being run.
 
 ### 2.2 Require the correct hub URL
 
@@ -87,7 +86,7 @@ By default, the Gaia hub will validate that the supplied URL matches `https://${
 
 ### 2.3 The `readURL` parameter
 
-By default, hub drivers return read URLs that point directly at the written content. For example, an S3 driver would return the URL directly to the S3 file. If you configure a CDN or domain to point at that same bucket, you can use the `readURL` parameter to tell the hub that files can be read from a given URL. For example, the `hub.blockstack.org` Gaia Hub is configured to return a read URL that looks like `https://gaia.blockstack.org/hub/`.
+Hub drivers by default return read URLs that point directly at the written content. An S3 driver for example, would return the URL directly to the S3 file. If you configure a CDN or domain to point at that same bucket, you can use the `readURL` parameter to relay to the hub that files can be read from a provided URL. For example, the `hub.blockstack.org` Gaia Hub is configured to return a read URL that looks like `https://gaia.blockstack.org/hub/`.
 
 > Unset the `readURL` parameter if you do not intend to deploy any caching.
 
@@ -95,11 +94,11 @@ By default, hub drivers return read URLs that point directly at the written cont
 
 #### 2.4.1 Open-membership hub
 
-An open-membership storage hub permits writes for *any* address top-level directory. Every request is validated such that write requests must provide valid authentication tokens for that address. Operating in this mode is recommended for service and identity providers who wish to support many different users.
+Open-membership storage hubs permit writes for *any* address top-level directory. Every request is validated such that write requests must provide valid authentication tokens for that address. Operating in the mode is highly recommended for service and identity providers who wish to help a variety of users.
 
 #### 2.4.2 Private-user hub
 
-A private-user hub receives requests for a single user. Requests are controlled via *whitelisting* the addresses allowed to write files. Recall that each application uses a different app- and user-specific address. It follows, to support application storage, your configuration must add to the whitelist each application you wish to use.
+A private-user hub receives requests for a single user. Requests are controlled via *whitelisting* the addresses allowed to write files. Recall that each application uses a different app- and user-specific address. It follows, to support application storage, your configuration must add to the whitelist each application you wish to use. 
 
 Alternatively, the user's client can use the authentication scheme and generate an association token for each app. The user should whitelist her address, and use her associated private key to sign each app's association token. This removes the need to whitelist each application, but with the caveat that the user needs to take care that her association tokens do not get misused.
 
