@@ -1,4 +1,4 @@
-To stake resources, [submit a transaction](01_how-to-submit-a-transaction.md) to the [`delegatebw`](https://github.com/ALAIO/alaio.contracts/blob/52fbd4ac7e6c38c558302c48d00469a4bed35f7c/contracts/alaio.system/include/alaio.system/alaio.system.hpp#L692) action of the `alaio` account.
+To stake resources, [submit a transaction](01_how-to-submit-a-transaction.md) to the [`delegatebw`](https://github.com/ALADINIO/alaio.contracts/blob/52fbd4ac7e6c38c558302c48d00469a4bed35f7c/contracts/alaio.system/include/alaio.system/alaio.system.hpp#L692) action of the `alaio` account.
 
 In the example shown below `useraaaaaaaa` stakes **1.0000 SYS** of NET and CPU to the account `mynewaccount`.
 ```javascript

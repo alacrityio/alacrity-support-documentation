@@ -25,12 +25,12 @@ brew remove alaio
 
 #### Ubuntu 18.04 Package Install
 ```sh
-wget https://github.com/alaio/ala/releases/download/v2.0.7/alaio_2.0.7-1-ubuntu-18.04_amd64.deb
+wget https://github.com/ALADINIO/ala/releases/download/v2.0.7/alaio_2.0.7-1-ubuntu-18.04_amd64.deb
 sudo apt install ./alaio_2.0.7-1-ubuntu-18.04_amd64.deb
 ```
 #### Ubuntu 16.04 Package Install
 ```sh
-wget https://github.com/alaio/ala/releases/download/v2.0.7/alaio_2.0.7-1-ubuntu-16.04_amd64.deb
+wget https://github.com/ALADINIO/ala/releases/download/v2.0.7/alaio_2.0.7-1-ubuntu-16.04_amd64.deb
 sudo apt install ./alaio_2.0.7-1-ubuntu-16.04_amd64.deb
 ```
 #### Ubuntu Package Uninstall
@@ -42,7 +42,7 @@ sudo apt remove alaio
 
 #### RPM Package Install
 ```sh
-wget https://github.com/alaio/ala/releases/download/v2.0.7/alaio-2.0.7-1.el7.x86_64.rpm
+wget https://github.com/ALADINIO/ala/releases/download/v2.0.7/alaio-2.0.7-1.el7.x86_64.rpm
 sudo yum install ./alaio-2.0.7-1.el7.x86_64.rpm
 ```
 #### RPM Package Uninstall
@@ -64,7 +64,7 @@ Also, soft links for each ALAIO program (`alanode`, `clala`, `kalad`, etc.) will
 
 To install previous versions of the ALAIO prebuilt binaries:
 
-1. Browse to https://github.com/ALAIO/ala/tags and select the actual version of the ALAIO software you need to install.
+1. Browse to https://github.com/ALADINIO/ala/tags and select the actual version of the ALAIO software you need to install.
 
 2. Scroll down past the `Release Notes` and download the package or archive that you need for your OS.
 

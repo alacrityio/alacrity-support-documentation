@@ -9,14 +9,14 @@ The ALAIO History Tools is a legacy, proof-of-concept (PoC) application that dem
 
 The following History Tools components have been migrated to the following ALAIO repositories:
 * `rodala` (formerly `combo-rocksdb`, `fill-rocksdb`, `wasm-ql-rocksdb`):
-  * service daemon: https://github.com/ALAIO/ala
+  * service daemon: https://github.com/ALADINIO/ala
 * `wasm-ql`:
-  * rodala support: https://github.com/ALAIO/ala
-  * alanode support: https://github.com/ALAIO/ala
-  * cdt support: https://github.com/ALAIO/alaio.cdt
+  * rodala support: https://github.com/ALADINIO/ala
+  * alanode support: https://github.com/ALADINIO/ala
+  * cdt support: https://github.com/ALADINIO/alaio.cdt
 * `abi-wasm`:
-  * cdt support: https://github.com/ALAIO/alaio.cdt
-  * alaiojs support: https://github.com/ALAIO/alaiojs
+  * cdt support: https://github.com/ALADINIO/alaio.cdt
+  * alaiojs support: https://github.com/ALADINIO/alaiojs
 
 ## Components
 
@@ -127,7 +127,7 @@ ALAIO contracts store their data in a format which is convenient for them, but h
 on general-purpose query engines. e.g. the `/v1/get_table_rows` RPC API struggles to provide 
 all the necessary query options that applications need. `wasm-ql-pg` allows contract authors
 and application authors to design their own queries using the same 
-[toolset](https://github.com/ALAIO/alaio.cdt) that they use to design contracts. This
+[toolset](https://github.com/ALADINIO/alaio.cdt) that they use to design contracts. This
 gives them full access to current contract state, a history of contract state, and the
 history of actions for that contract. `fill-pg` preserves this data in its original
 format to support `wasm-ql-pg`.

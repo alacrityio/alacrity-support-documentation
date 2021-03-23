@@ -4,7 +4,7 @@ To download the ALAIO source code, clone the `ala` repo and its submodules. It i
 
 ```sh
 mkdir -p ~/alaio && cd ~/alaio
-git clone --recursive https://github.com/ALAIO/ala
+git clone --recursive https://github.com/ALADINIO/ala
 ```
 
 ## Update Submodules

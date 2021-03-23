@@ -9,8 +9,8 @@ to a .csv file:
 * Pending stake refunds
 
 It automatically determines the system token from the system contract's `rammarket` table. This example makes the following assumptions:
-* The example `alaio.system` contract in https://github.com/ALAIO/alaio.contracts is installed and initialized on the `alaio` account.
-* The example `alaio.token` contract in https://github.com/ALAIO/alaio.contracts is installed on the `alaio.token` account and manages the system token.
+* The example `alaio.system` contract in https://github.com/ALADINIO/alaio.contracts is installed and initialized on the `alaio` account.
+* The example `alaio.token` contract in https://github.com/ALADINIO/alaio.contracts is installed on the `alaio.token` account and manages the system token.
 
 Note: use the `update_alaio_token_to_cdt1.6` branch (temporary) of `alaio.contracts` during build.
 

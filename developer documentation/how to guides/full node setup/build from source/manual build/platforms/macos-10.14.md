@@ -29,7 +29,7 @@ mkdir -p $ALAIO_INSTALL_LOCATION
 # install git
 brew update && brew install git
 # clone ALAIO repository
-git clone https://github.com/ALAIO/ala.git $ALAIO_LOCATION
+git clone https://github.com/ALADINIO/ala.git $ALAIO_LOCATION
 cd $ALAIO_LOCATION && git submodule update --init --recursive
 ```
 

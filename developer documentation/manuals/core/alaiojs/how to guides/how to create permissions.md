@@ -1,4 +1,4 @@
-To create new permissions, [submit a transaction](01_how-to-submit-a-transaction.md) to the [`updateauth`](https://github.com/ALAIO/alaio.contracts/blob/52fbd4ac7e6c38c558302c48d00469a4bed35f7c/contracts/alaio.bios/include/alaio.bios/alaio.bios.hpp#L205) action of the `alaio` account.
+To create new permissions, [submit a transaction](01_how-to-submit-a-transaction.md) to the [`updateauth`](https://github.com/ALADINIO/alaio.contracts/blob/52fbd4ac7e6c38c558302c48d00469a4bed35f7c/contracts/alaio.bios/include/alaio.bios/alaio.bios.hpp#L205) action of the `alaio` account.
 
 In the example shown below `useraaaaaaaa` creates a new permission called `my_new_permission` on the account `useraaaaaaaa`, with the public key `PUB_R1_6FPFZqw5ahYrR9jD96yDbbDNTdKtNqRbze6oTDLntrsANgQKZu`.
 ```javascript

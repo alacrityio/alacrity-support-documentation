@@ -74,7 +74,7 @@ make -j10 install
 
 ```
 cd ~
-wget https://github.com/ALAIO/ala/releases/download/v1.8.10/alaio_1.8.10-1-ubuntu-18.04_amd64.deb
+wget https://github.com/ALADINIO/ala/releases/download/v1.8.10/alaio_1.8.10-1-ubuntu-18.04_amd64.deb
 sudo apt install -y ./alaio_1.8.10-1-ubuntu-18.04_amd64.deb
 ```
 
@@ -82,7 +82,7 @@ sudo apt install -y ./alaio_1.8.10-1-ubuntu-18.04_amd64.deb
 
 ```
 cd ~
-wget https://github.com/ALAIO/alaio.cdt/releases/download/v1.6.2/alaio.cdt_1.6.2-1-ubuntu-18.04_amd64.deb
+wget https://github.com/ALADINIO/alaio.cdt/releases/download/v1.6.2/alaio.cdt_1.6.2-1-ubuntu-18.04_amd64.deb
 sudo apt install -y ./alaio.cdt_1.6.2-1-ubuntu-18.04_amd64.deb
 ```
 
@@ -90,7 +90,7 @@ sudo apt install -y ./alaio.cdt_1.6.2-1-ubuntu-18.04_amd64.deb
 
 ```
 cd ~
-git clone --recursive https://github.com/ALAIO/history-tools.git
+git clone --recursive https://github.com/ALADINIO/history-tools.git
 cd history-tools
 mkdir build
 cd build

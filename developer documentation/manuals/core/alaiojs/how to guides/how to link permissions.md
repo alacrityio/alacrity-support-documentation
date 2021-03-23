@@ -1,4 +1,4 @@
-To link an existing permission, [submit a transaction](01_how-to-submit-a-transaction.md) to the [`linkauth`](https://github.com/ALAIO/alaio.contracts/blob/52fbd4ac7e6c38c558302c48d00469a4bed35f7c/contracts/alaio.bios/include/alaio.bios/alaio.bios.hpp#L240) action of the `alaio` account.
+To link an existing permission, [submit a transaction](01_how-to-submit-a-transaction.md) to the [`linkauth`](https://github.com/ALADINIO/alaio.contracts/blob/52fbd4ac7e6c38c558302c48d00469a4bed35f7c/contracts/alaio.bios/include/alaio.bios/alaio.bios.hpp#L240) action of the `alaio` account.
 
 In the example shown below `useraaaaaaaa` links the permission `action_perm` to the contract `useraaaaaaaa`'s `contract_action` action.
 ```javascript

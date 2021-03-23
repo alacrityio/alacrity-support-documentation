@@ -1,4 +1,4 @@
-To vote for a block produder, [submit a transaction](01_how-to-submit-a-transaction.md) to the [`voteproducer`](https://github.com/ALAIO/alaio.contracts/blob/52fbd4ac7e6c38c558302c48d00469a4bed35f7c/contracts/alaio.system/include/alaio.system/alaio.system.hpp#L1130) action of the `alaio` account.
+To vote for a block produder, [submit a transaction](01_how-to-submit-a-transaction.md) to the [`voteproducer`](https://github.com/ALADINIO/alaio.contracts/blob/52fbd4ac7e6c38c558302c48d00469a4bed35f7c/contracts/alaio.system/include/alaio.system/alaio.system.hpp#L1130) action of the `alaio` account.
 
 In the example shown below `useraaaaaaaa` votes for producers `userbbbbbbbb` and `usercccccccc`.
 ```javascript
